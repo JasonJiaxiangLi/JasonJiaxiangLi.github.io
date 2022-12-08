@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a 5th-year Ph.D. student at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Shiqian Ma](https://www.math.ucdavis.edu/~sqma/), also working with [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/) (thesis advisor: [Prof. Xianliang Hu](https://person.zju.edu.cn/en/xlhu)). My research interests are the optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
+I am a 5th-year Ph.D. student at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Shiqian Ma](https://www.math.ucdavis.edu/~sqma/), also working with [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/) (thesis advisor: [Prof. Xianliang Hu](https://person.zju.edu.cn/en/xlhu)). My research interests are optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
 
 - **Nonconvex Optimization**: Computational complexities for gradient-based and gradient-free algorithms, optimization on Riemannian manifolds and primal-dual optimization algorithms.
 - **Variational Inequalities**: Convergence theory for variational inequality with applications in minimax problems.
