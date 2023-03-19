@@ -12,6 +12,7 @@ I am a 5th-year Ph.D. student at the [Department of Mathematics](https://math.uc
 
 - **Nonconvex Optimization**: Computational complexities for gradient-based and gradient-free algorithms, optimization on Riemannian manifolds and primal-dual optimization algorithms.
 - **Variational Inequalities**: Convergence theory for variational inequality with applications in minimax problems.
+- **Distributed Optimization**: Convergence theory for distributed optimization algorithms, including decentralized and federated learning.
 - **Reinforcement Learning**: Theories for reinforcement learning algorithms, especially for multi-armed bandits and convergence of policy-based methods.
 
 I am also interested in theory and computation for supervised and unsupervised learning in general.
