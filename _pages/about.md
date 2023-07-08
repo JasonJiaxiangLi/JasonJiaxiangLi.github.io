@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a 5th-year Ph.D. student at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Shiqian Ma](https://www.math.ucdavis.edu/~sqma/), also working with [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/) (thesis advisor: [Prof. Xianliang Hu](https://person.zju.edu.cn/en/xlhu)). My research interests are optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
+I am a 5th-year Ph.D. student at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://www.math.ucdavis.edu/~sqma/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/) (thesis advisor: [Prof. Xianliang Hu](https://person.zju.edu.cn/en/xlhu)). My research interests are optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
 
 - **Nonconvex Optimization**: Computational complexities for gradient-based and gradient-free algorithms, optimization on Riemannian manifolds and primal-dual optimization algorithms.
 - **Variational Inequalities**: Convergence theory for variational inequality with applications in minimax problems.
@@ -19,7 +19,10 @@ I am also interested in theory and computation for supervised and unsupervised l
 
 ## Experience
 
-- **Software Engineer Intern, Machine Learning** at **Meta**, Ads Core Machine Learning.\
+- **Applied Scientist Intern** at **Amazon.com**, Prime Science team.\
+ June 2023 - September 2023, *Seattle, WA*
+
+- **Software Engineer Intern, Machine Learning** at **Meta Platforms**, Ads Core Machine Learning team.\
  June 2022 - September 2022, *Menlo Park, CA*
 
 ## Preprints and Publications
@@ -32,7 +35,7 @@ I am also interested in theory and computation for supervised and unsupervised l
 
 ## Professional Activities and Services
 
-- Paper Reviewer for AISTATS (2021, 2022), ICML (2022)
+- Paper Reviewer for AISTATS (2021, 2022, 2023), ICML (2022), NeurIPS (2023)
 
 - Invited and Contributed Talks
   + Modeling and Optimization: Theory and Applications (MOPTA), August 2021
