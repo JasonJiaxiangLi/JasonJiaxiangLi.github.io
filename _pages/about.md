@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a 5th-year Ph.D. student at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://www.math.ucdavis.edu/~sqma/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/) (thesis advisor: [Prof. Xianliang Hu](https://person.zju.edu.cn/en/xlhu)). My research interests are optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
+Hi! I am a postdoctoral associate at the [Department of Electrical and Computer Engineering](https://cse.umn.edu/ece), [University of Minnesota](https://twin-cities.umn.edu/), supervised by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html). In Dec 2023, I obtained my Ph.D. degree at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://www.math.ucdavis.edu/~sqma/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/). My research interests are optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
 
 - **Nonconvex Optimization**: Computational complexities for gradient-based and gradient-free algorithms, optimization on Riemannian manifolds and primal-dual optimization algorithms.
 - **Variational Inequalities**: Convergence theory for variational inequality with applications in minimax problems.
@@ -35,7 +35,7 @@ I am also interested in theory and computation for supervised and unsupervised l
 
 ## Professional Activities and Services
 
-- Paper Reviewer for AISTATS (2021, 2022, 2023), ICML (2022), NeurIPS (2023)
+- Paper Reviewer for AISTATS (2021, 2022, 2023), ICML (2022), NeurIPS (2023), ICLR (2023)
 
 - Invited and Contributed Talks
   + Modeling and Optimization: Theory and Applications (MOPTA), August 2021
