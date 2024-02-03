@@ -5,12 +5,12 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="https://scholar.google.com/citations?user=Dy-3prIAAAAJ&hl=en">my Google Scholar profile</a>.</u>
-{% endif %}
+See my [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Dy-3prIAAAAJ) for more information
 
-{% include base_path %}
+- **Stochastic zeroth-order Riemannian derivative estimation and optimization** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *Mathematics of Operations Research*, 2022 \[[PDF](https://arxiv.org/pdf/2003.11238.pdf)\]
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+- **Federated learning on Riemannian manifolds** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Appl. Set-Valued Anal. Optim. 5 (2023), 213-232* \[[PDF](https://arxiv.org/pdf/2206.05668.pdf)\]
+
+- **A Riemannian ADMM** <ins>Jiaxiang Li</ins>, Shiqian Ma, Tejes Srivastava. *ArXiv preprint* (2022) \[[PDF](https://arxiv.org/pdf/2211.02163.pdf)\]
+
+- **Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *ArXiv preprint* (2023) \[[PDF](https://arxiv.org/pdf/2309.14506.pdf)\]
