@@ -14,3 +14,5 @@ See my [Google Scholar](https://scholar.google.com/citations?view_op=list_works&
 - **A Riemannian ADMM.** <ins>Jiaxiang Li</ins>, Shiqian Ma, Tejes Srivastava. *ArXiv preprint* (2022) \[[PDF](https://arxiv.org/pdf/2211.02163.pdf)\]
 
 - **Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *ArXiv preprint* (2023) \[[PDF](https://arxiv.org/pdf/2309.14506.pdf)\]
+
+- **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *ArXiv preprint* (2024) \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
