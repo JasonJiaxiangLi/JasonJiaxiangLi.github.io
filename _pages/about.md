@@ -12,7 +12,7 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 My research interests are optimization problems arising in machine learning, operations research and other applications. I am working on the following topics:
 - **Nonconvex Optimization**: Computational complexities for gradient-based and gradient-free (zeroth-order) algorithms, optimization on Riemannian manifolds and primal-dual optimization algorithms.
-- **Variational Inequalities**: Convergence theory for variational inequality with applications in minimax problems.
+- **Variational Inequalities**: Convergence theory for variational inequality with applications in minimax/bilevel problems.
 - **Distributed Optimization**: Convergence theory for distributed optimization algorithms, including decentralized and federated learning.
 - **Reinforcement Learning**: Theories for reinforcement learning algorithms, especially for multi-armed bandits and convergence of policy-based methods.
 
@@ -22,7 +22,7 @@ I am also interested in theory and computation for supervised and unsupervised l
 
 - Paper Reviewer
   + Journal: INFORMS Journal on Computing, Information and Inference: A Journal of the IMA, JMLR
-  + Conferences: AISTATS (2021, 2022, 2023), ICML (2022, 2024), NeurIPS (2023), ICLR (2023)
+  + Conferences: AISTATS (2021, 2022, 2023), ICML (2022, 2024), NeurIPS (2023, 2024), ICLR (2023)
 
 - Invited and Contributed Talks
   + INFORMS Optimization Society Conference, Houston, March 2024
@@ -30,8 +30,7 @@ I am also interested in theory and computation for supervised and unsupervised l
   + Modeling and Optimization: Theory and Applications (MOPTA), August 2021
   + SIAM Conference on Optimization, July 2021
   
- 
-## Experiences
+## Industry Experiences
 
 - **Applied Scientist Intern** at **Amazon.com**, Prime Science team.\
  June 2023 - September 2023, *Seattle, WA*
