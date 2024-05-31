@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-See my [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=Dy-3prIAAAAJ) for more information
+See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en) for more information
 
 - **Stochastic zeroth-order Riemannian derivative estimation and optimization.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *Mathematics of Operations Research*, 2022 \[[PDF](https://arxiv.org/pdf/2003.11238.pdf)\]
 
