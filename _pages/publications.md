@@ -17,7 +17,7 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Submitted to JMLR* (2024) \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
 
-- **Revisiting zeroth-order optimization for memory-efficient llm fine-tuning: A benchmark.** Yihua Zhang$^\star$, Pingzhi Li$^\star$, Junyuan Hong$^\star$, <ins>Jiaxiang Li</ins>$^\star$, Yimeng Zhang, Wenqing Zheng, Pin-Yu Chen et al. *International Conference on Machine Learning* (2024) \[[PDF](https://arxiv.org/pdf/2402.11592)\]
+- **Revisiting zeroth-order optimization for memory-efficient llm fine-tuning: A benchmark.** Yihua Zhang*, Pingzhi Li*, Junyuan Hong*, <ins>Jiaxiang Li</ins>*, Yimeng Zhang, Wenqing Zheng, Pin-Yu Chen et al. *International Conference on Machine Learning* (2024) \[[PDF](https://arxiv.org/pdf/2402.11592)\]
 
 - **Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment.** <ins>Jiaxiang Li</ins>, Siliang Zeng, Hoi-To Wai, Chenliang Li, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2405.17888)\]
 
