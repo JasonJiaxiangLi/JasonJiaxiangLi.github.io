@@ -17,13 +17,13 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Submitted to JMLR* (2024) \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
 
-- **Revisiting zeroth-order optimization for memory-efficient llm fine-tuning: A benchmark.** Yihua Zhang<sup>*</sup>, Pingzhi Li<sup>*</sup>, Junyuan Hong<sup>*</sup>, <ins>Jiaxiang Li</ins><sup>*</sup>, Yimeng Zhang, Wenqing Zheng, Pin-Yu Chen et al. *International Conference on Machine Learning* (2024) \[[PDF](https://arxiv.org/pdf/2402.11592)\]
+- **Revisiting zeroth-order optimization for memory-efficient llm fine-tuning: A benchmark.** Yihua Zhang$^*$, Pingzhi Li$^*$, Junyuan Hong$^*$, <ins>Jiaxiang Li</ins>$^*$, Yimeng Zhang, Wenqing Zheng, Pin-Yu Chen et al. *International Conference on Machine Learning* (2024) \[[PDF](https://arxiv.org/pdf/2402.11592)\]
 
-- **Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment.** <ins>Jiaxiang Li</ins>, Siliang Zeng, Hoi-To Wai, Chenliang Li, Alfredo Garcia, and Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2405.17888)\]
+- **Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment.** <ins>Jiaxiang Li</ins>, Siliang Zeng, Hoi-To Wai, Chenliang Li, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2405.17888)\]
 
-- **Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback.** Chenliang Li, Siliang Zeng, Zeyi Liao, <ins>Jiaxiang Li</ins>, Dongyeop Kang, Alfredo Garcia, and Mingyi Hong. (2024) \[[PDF](https://arxiv.org/abs/2406.06874)\]
+- **Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback.** Chenliang Li, Siliang Zeng, Zeyi Liao, <ins>Jiaxiang Li</ins>, Dongyeop Kang, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/abs/2406.06874)\]
 
-- **SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining** Andi Han, <ins>Jiaxiang Li</ins>, Wei Huang, Mingyi Hong, Akiko Takeda, Pratik Jawanpuria, and Bamdev Mishra. (2024) \[[PDF](https://arxiv.org/pdf/2406.02214)\]
+- **SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining** Andi Han, <ins>Jiaxiang Li</ins>, Wei Huang, Mingyi Hong, Akiko Takeda, Pratik Jawanpuria, Bamdev Mishra. (2024) \[[PDF](https://arxiv.org/pdf/2406.02214)\]
 
-- **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, and Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2402.08821)\]
+- **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2402.08821)\]
 
