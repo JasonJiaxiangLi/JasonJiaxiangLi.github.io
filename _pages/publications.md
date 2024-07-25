@@ -21,7 +21,7 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment.** <ins>Jiaxiang Li</ins>, Siliang Zeng, Hoi-To Wai, Chenliang Li, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2405.17888)\]
 
-- **Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback.** Chenliang Li, Siliang Zeng, Zeyi Liao, <ins>Jiaxiang Li</ins>, Dongyeop Kang, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/abs/2406.06874)\]
+- **Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback.** Chenliang Li, Siliang Zeng, Zeyi Liao, <ins>Jiaxiang Li</ins>, Dongyeop Kang, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2406.06874)\]
 
 - **SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining** Andi Han, <ins>Jiaxiang Li</ins>, Wei Huang, Mingyi Hong, Akiko Takeda, Pratik Jawanpuria, Bamdev Mishra. (2024) \[[PDF](https://arxiv.org/pdf/2406.02214)\]
 
