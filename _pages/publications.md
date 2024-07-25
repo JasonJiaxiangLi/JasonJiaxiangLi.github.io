@@ -7,9 +7,9 @@ author_profile: true
 
 See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en) for more information
 
-- **Stochastic zeroth-order Riemannian derivative estimation and optimization.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *Mathematics of Operations Research*, 2023 \[[PDF](https://arxiv.org/pdf/2003.11238.pdf)\]
+- **Stochastic Zeroth-order Riemannian Derivative Estimation and Optimization.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *Mathematics of Operations Research*, 2023 \[[PDF](https://arxiv.org/pdf/2003.11238.pdf)\]
 
-- **Federated learning on Riemannian manifolds.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Appl. Set-Valued Anal. Optim. 5 (2023), 213-232* \[[PDF](https://arxiv.org/pdf/2206.05668.pdf)\]
+- **Federated Learning on Riemannian Manifolds.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Appl. Set-Valued Anal. Optim. 5 (2023), 213-232* \[[PDF](https://arxiv.org/pdf/2206.05668.pdf)\]
 
 - **A Riemannian ADMM.** <ins>Jiaxiang Li</ins>, Shiqian Ma, Tejes Srivastava. *Submitted to MOR* (2022) \[[PDF](https://arxiv.org/pdf/2211.02163.pdf)\]
 
@@ -23,7 +23,7 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback.** Chenliang Li, Siliang Zeng, Zeyi Liao, <ins>Jiaxiang Li</ins>, Dongyeop Kang, Alfredo Garcia, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2406.06874)\]
 
-- **SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining** Andi Han, <ins>Jiaxiang Li</ins>, Wei Huang, Mingyi Hong, Akiko Takeda, Pratik Jawanpuria, Bamdev Mishra. (2024) \[[PDF](https://arxiv.org/pdf/2406.02214)\]
+- **SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining.** Andi Han, <ins>Jiaxiang Li</ins>, Wei Huang, Mingyi Hong, Akiko Takeda, Pratik Jawanpuria, Bamdev Mishra. (2024) \[[PDF](https://arxiv.org/pdf/2406.02214)\]
 
-- **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2402.08821)\]
+- **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization.** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2402.08821)\]
 
