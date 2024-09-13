@@ -14,8 +14,8 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 - August 2024: I'm very happy to receive the **INFORMS Computing Society Prize**! See you in Seattle this October!
 
-- August 2024: Paper *Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms* is accepted by **SIAM Journal on Optimization**.
+- August 2024: Paper "*Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms*" is accepted by **SIAM Journal on Optimization**.
 
 - July 2024: A new grant “Bi-Level Optimization for Hierarchical Machine Learning Problems: Models, Algorithms and Applications” is awarded from NSF. I'm excited to be the co-PI of this project with Prof Hong.
 
-- May 2024: Paper *Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark* is accepted by ICML.
+- May 2024: Paper "*Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark*" is accepted by **ICML**.
