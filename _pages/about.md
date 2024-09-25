@@ -12,6 +12,8 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 ## News
 
+- September 2024: Two papers "*Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment*" and "*SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining*" are accepted by NeurIPS 2024. Congratulations to all my collborators!
+
 - August 2024: I'm very happy to receive the **INFORMS Computing Society Prize**! See you in Seattle this October!
 
 - August 2024: Paper "*Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms*" is accepted by **SIAM Journal on Optimization**.
