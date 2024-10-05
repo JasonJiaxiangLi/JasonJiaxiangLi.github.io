@@ -20,4 +20,4 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 - July 2024: A new grant “Bi-Level Optimization for Hierarchical Machine Learning Problems: Models, Algorithms and Applications” is awarded from **NSF**. I'm excited to be the co-PI of this project with Prof Hong!
 
-- May 2024: Paper "*Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark*" is accepted by **ICML**. Congratulations to all my collaborators!
+- May 2024: Paper "*Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark*" is accepted by **ICML 2024**. Congratulations to all my collaborators!
