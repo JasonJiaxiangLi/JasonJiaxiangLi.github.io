@@ -27,3 +27,5 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization.** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2402.08821)\]
 
+- **Barrier Function for Bilevel Optimization with Coupled Lower-Level Constraints: Formulation, Approximation and Algorithms.** Xiaotian Jiang, <ins>Jiaxiang Li</ins>, Mingyi Hong, Shuzhong Zhang. (2024) \[[PDF](https://arxiv.org/pdf/2410.10670)\]
+
