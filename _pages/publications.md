@@ -11,9 +11,9 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Federated Learning on Riemannian Manifolds.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Appl. Set-Valued Anal. Optim. 5 (2023), 213-232* \[[PDF](https://arxiv.org/pdf/2206.05668.pdf)\]
 
-- **A Riemannian ADMM.** <ins>Jiaxiang Li</ins>, Shiqian Ma, Tejes Srivastava. *Submitted to MOR* (2022) \[[PDF](https://arxiv.org/pdf/2211.02163.pdf)\]
+- **A Riemannian ADMM.** <ins>Jiaxiang Li</ins>, Shiqian Ma, Tejes Srivastava. *Mathematics of Operations Research (Accepted)* (2022) \[[PDF](https://arxiv.org/pdf/2211.02163.pdf)\]
 
-- **Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *SIAM Journal on Optimization (Accepted)* (2024) \[[PDF](https://arxiv.org/pdf/2309.14506.pdf)\]
+- **Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *SIAM Journal on Optimization 34 (4), 3314-3341* (2024) \[[PDF](https://arxiv.org/pdf/2309.14506.pdf)\]
 
 - **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Submitted to JMLR* (2024) \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
 
