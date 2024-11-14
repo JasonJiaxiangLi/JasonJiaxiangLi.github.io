@@ -12,6 +12,8 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 ## News
 
+- November 2024: Paper "*A Riemannian ADMM*" is accepted by **Mathematics of Operations Research**!
+
 - September 2024: Two papers are accepted by **NeurIPS 2024**. Congratulations to all my collaborators! See you in Vancouver this December!
   - *Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment*
   - *SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining*
