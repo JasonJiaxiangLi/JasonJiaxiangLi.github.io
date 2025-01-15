@@ -12,6 +12,8 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 ## News
 
+- January 2025: Paper "*Riemannian Bilevel Optimization*" is accepted by **Journal of Machine Learning Research**!
+
 - November 2024: Paper "*A Riemannian ADMM*" is accepted by **Mathematics of Operations Research**!
 
 - September 2024: Two papers are accepted by **NeurIPS 2024**. Congratulations to all my collaborators! See you in Vancouver this December!
