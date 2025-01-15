@@ -17,7 +17,7 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 
 - **Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *SIAM Journal on Optimization 34 (4), 3314-3341* (2024) \[[PDF](https://arxiv.org/pdf/2309.14506.pdf)\]
 
-- **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Submitted to JMLR* (2024) \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
+- **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Journal of Machine Learning Research (Accepted)* (2024) \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
 
 **Conferences**
 
