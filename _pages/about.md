@@ -12,15 +12,18 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 ## News
 
+- January 2025: One paper is accepted by **ICLR 2025**. Congratulations to all my collaborators!
+  - *Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback*
+
 - January 2025: Paper "*Riemannian Bilevel Optimization*" is accepted by **Journal of Machine Learning Research**!
 
 - November 2024: Paper "*A Riemannian ADMM*" is accepted by **Mathematics of Operations Research**!
 
-- September 2024: Two papers are accepted by **NeurIPS 2024**. Congratulations to all my collaborators! See you in Vancouver this December!
+- September 2024: Two papers are accepted by **NeurIPS 2024**. Congratulations to all my collaborators!
   - *Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment*
   - *SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining*
 
-- August 2024: I'm very happy to receive the **INFORMS Computing Society Prize**! See you in Seattle this October!
+- August 2024: I'm very happy to receive the **INFORMS Computing Society Prize**!
 
 - August 2024: Paper "*Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms*" is accepted by **SIAM Journal on Optimization**!
 
