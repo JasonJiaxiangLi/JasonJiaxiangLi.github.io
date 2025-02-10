@@ -12,6 +12,8 @@ Hi, welcome to my page! I am a postdoctoral associate at the [Department of Elec
 
 ## News
 
+- February 2025: paper "*Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization*" is accepted by **Pacific Journal of Optimization**.
+
 - January 2025: One paper is accepted by **ICLR 2025**. Congratulations to all my collaborators!
   - *Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback*
 
