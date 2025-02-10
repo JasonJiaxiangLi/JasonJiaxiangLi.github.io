@@ -7,12 +7,6 @@ author_profile: true
 
 See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en) for more information
 
-**Preprints**
-
-- **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization.** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, Mingyi Hong. (2024) \[[PDF](https://arxiv.org/pdf/2402.08821)\]
-
-- **A Barrier Function Approach for Bilevel Optimization with Coupled Lower-Level Constraints Formulation, Approximation and Algorithms.** Xiaotian Jiang, <ins>Jiaxiang Li</ins>, Mingyi Hong, Shuzhong Zhang. (2024) \[[PDF](https://JasonJiaxiangLi.github.io/files/barrier_paper.pdf)\]
-
 **Journals**
 
 - **Stochastic Zeroth-order Riemannian Derivative Estimation and Optimization.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *Mathematics of Operations Research 48.2 (2023): 1183-1211* \[[PDF](https://arxiv.org/pdf/2003.11238.pdf)\]
@@ -24,6 +18,10 @@ See my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&h
 - **Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms.** <ins>Jiaxiang Li</ins>, Krishnakumar Balasubramanian, Shiqian Ma. *SIAM Journal on Optimization 34 (4), 3314-3341 (2024)* \[[PDF](https://arxiv.org/pdf/2309.14506.pdf)\]
 
 - **Riemannian Bilevel Optimization.** <ins>Jiaxiang Li</ins>, Shiqian Ma. *Journal of Machine Learning Research (Accepted) (2024)* \[[PDF](https://arxiv.org/pdf/2402.02019.pdf)\]
+
+- **Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization.** <ins>Jiaxiang Li</ins>, Xuxing Chen, Shiqian Ma, Mingyi Hong. *Pacific Journal on Optimization (Accepted) (2024)* \[[PDF](https://arxiv.org/pdf/2402.08821)\]
+
+- **A Barrier Function Approach for Bilevel Optimization with Coupled Lower-Level Constraints Formulation, Approximation and Algorithms.** Xiaotian Jiang, <ins>Jiaxiang Li</ins>, Mingyi Hong, Shuzhong Zhang. *Submitted (2024)* \[[PDF](https://JasonJiaxiangLi.github.io/files/barrier_paper.pdf)\]
 
 **Conferences**
 
