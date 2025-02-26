@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Talks and Activities"
+title: "Misc"
 permalink: /talksandmore/
 author_profile: true
 ---
@@ -20,7 +20,7 @@ author_profile: true
 ## Awards
   + INFORMS Computing Society Prize, 2024
 
-## Past Industry Experiences
+## Industry Experiences
 
 - **Applied Scientist Intern** at **Amazon.com**, Prime Science team.\
  June 2023 - September 2023, *Seattle, WA*
