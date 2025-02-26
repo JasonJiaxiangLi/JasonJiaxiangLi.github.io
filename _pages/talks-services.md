@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Misc"
+title: ""
 permalink: /talksandmore/
 author_profile: true
 ---
