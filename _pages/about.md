@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, welcome to my page! I am a postdoctoral associate at the [Department of Electrical and Computer Engineering](https://cse.umn.edu/ece), [University of Minnesota](https://twin-cities.umn.edu/), mentored by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html) and [Prof. Shuzhong Zhang](https://sites.google.com/umn.edu/shuzhong-zhang). I obtained my Ph.D. degree in Applied Mathematics at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://sqma.rice.edu/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/). 
+Hi, welcome to my page! I am a postdoctoral associate at the [Department of Electrical and Computer Engineering](https://cse.umn.edu/ece), [University of Minnesota](https://twin-cities.umn.edu/), mentored by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html) and [Prof. Shuzhong Zhang](https://sites.google.com/umn.edu/shuzhong-zhang). I obtained my Ph.D. degree in Applied Mathematics at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://sqma.rice.edu/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/). My CV is [here](https://JasonJiaxiangLi.github.io/files/CV_Jiaxiang_Li.pdf)
 
 ## News
 
