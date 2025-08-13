@@ -83,11 +83,11 @@ author:
   name             : "Jiaxiang Li"
   avatar           : "jiaxiang_caliroadno1.jpg"
   bio              : "Ph.D. in Applied Mathematics"
-  location         : "University of Minnesota, Twin Cities"
+  location         : "Meta"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en"
-  email            : "li003755@umn.edu" # "jxjli@ucdavis.edu"
+  email            : "jasonjx@meta.com"# "li003755@umn.edu" # "jxjli@ucdavis.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -100,10 +100,10 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : # "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "jiaxiang-li-9aa485118"
-  orcid            : # "http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0009-0001-5555-6511"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
