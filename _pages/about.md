@@ -48,4 +48,6 @@ My research lies at the intersection of applied mathematics, optimization theory
 </ul>
 </div>
 
+<div class="clustrmap">
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=d2-9GfXbNZ_CT16pVbPIUgTFUp-1XfNBsc7byNJ2bas&cl=ffffff&w=a"></script>
+</div>
