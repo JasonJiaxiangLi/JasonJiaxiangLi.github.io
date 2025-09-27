@@ -33,9 +33,13 @@ My research lies at the intersection of applied mathematics, optimization theory
 
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">November 2024: Paper <em>A Riemannian ADMM</em> is accepted by <strong>Mathematics of Operations Research</strong>!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">September 2024: Two papers are accepted by <strong>NeurIPS 2024</strong>. Congratulations to all my collaborators!</li>
-  - <em>Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment</em>
-  - <em>SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining</em>
+<li style="margin-bottom:12px; padding:8px 0; border-bottom:1px solid #e9ecef;">
+    September 2024: Two papers are accepted by <strong>NeurIPS 2024</strong>. Congratulations to all my collaborators!
+    <ul style="margin:8px 0 0 20px; padding-left:0;">
+      <li><em>Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment</em></li>
+      <li>Paper B: <em>SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining</em></li>
+    </ul>
+  </li>
 
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2024: I'm very happy to receive the <strong>INFORMS Computing Society Prize</strong>!</li>
 
