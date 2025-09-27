@@ -25,7 +25,7 @@ My research lies at the intersection of applied mathematics, optimization theory
     
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2025: Starting my new job as Research Scientist at Meta!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">February 2025: Paper <strong>Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization</strong> is accepted by **Pacific Journal of Optimization**.</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">February 2025: Paper <strong>Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization</strong> is accepted by <strong>Pacific Journal of Optimization</strong>.</li>
 
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">January 2025: Paper <strong>Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback</strong> is accepted by <strong>ICLR 2025</strong> (<strong>Spotlight</strong>). Congratulations to all my collaborators!</li>
 
