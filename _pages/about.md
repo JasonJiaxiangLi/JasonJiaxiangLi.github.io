@@ -23,27 +23,27 @@ My research lies at the intersection of applied mathematics, optimization theory
 <div style="height: 400px; overflow-y: auto; border: 1px solid #e1e5e9; padding: 20px; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <ul style="margin: 0; padding-left: 0; list-style: none;">
     
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2025: Starting my new job as Research Scientist at Meta!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2025: Starting my new job as Research Scientist at <strong>Meta</strong>!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">February 2025: Paper <strong>Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization</strong> is accepted by <strong>Pacific Journal of Optimization</strong>.</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">February 2025: Paper <em>Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization</em> is accepted by <strong>Pacific Journal of Optimization</strong>.</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">January 2025: Paper <strong>Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback</strong> is accepted by <strong>ICLR 2025</strong> (<strong>Spotlight</strong>). Congratulations to all my collaborators!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">January 2025: Paper <em>Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback</em> is accepted by <strong>ICLR 2025</strong> (<strong>Spotlight</strong>). Congratulations to all my collaborators!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">January 2025: Paper <strong>Riemannian Bilevel Optimization</strong> is accepted by <strong>Journal of Machine Learning Research</strong>!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">January 2025: Paper <em>Riemannian Bilevel Optimization</em> is accepted by <strong>Journal of Machine Learning Research</strong>!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">November 2024: Paper <strong>A Riemannian ADMM</strong> is accepted by <strong>Mathematics of Operations Research</strong>!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">November 2024: Paper <em>A Riemannian ADMM</em> is accepted by <strong>Mathematics of Operations Research</strong>!</li>
 
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">September 2024: Two papers are accepted by <strong>NeurIPS 2024</strong>. Congratulations to all my collaborators!</li>
-  - <strong>Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment</strong>
-  - <strong>SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining</strong>
+  - <em>Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment</em>
+  - <em>SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining</em>
 
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2024: I'm very happy to receive the <strong>INFORMS Computing Society Prize</strong>!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2024: Paper <strong>Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms</strong> is accepted by <strong>SIAM Journal on Optimization</strong>!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2024: Paper <em>Zeroth-order Riemannian Averaging Stochastic Approximation Algorithms</em> is accepted by <strong>SIAM Journal on Optimization</strong>!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">July 2024: A new grant <strong>Bi-Level Optimization for Hierarchical Machine Learning Problems: Models, Algorithms and Applications</strong> is awarded from <strong>NSF</strong>. I'm excited to be the co-PI of this project with Prof Hong!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">July 2024: A new grant <em>Bi-Level Optimization for Hierarchical Machine Learning Problems: Models, Algorithms and Applications</em> is awarded from <strong>NSF</strong>. I'm excited to be the co-PI of this project with Prof Hong!</li>
 
-<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">May 2024: Paper <strong>Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark</strong> is accepted by <strong>ICML 2024</strong>. Congratulations to all my collaborators!</li>
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">May 2024: Paper <em>Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark</em> is accepted by <strong>ICML 2024</strong>. Congratulations to all my collaborators!</li>
 
 </ul>
 </div>
