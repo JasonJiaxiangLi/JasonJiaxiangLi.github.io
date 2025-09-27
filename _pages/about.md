@@ -20,7 +20,7 @@ My research lies at the intersection of applied mathematics, optimization theory
 ## News
 ------
 
-<div style="height: 400px; overflow-y: auto; border: 1px solid #e1e5e9; padding: 20px; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<div style="height: 600px; overflow-y: auto; border: 1px solid #e1e5e9; padding: 20px; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <ul style="margin: 0; padding-left: 0; list-style: none;">
     
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2025: Starting my new job as Research Scientist at <strong>Meta</strong>!</li>
@@ -37,7 +37,7 @@ My research lies at the intersection of applied mathematics, optimization theory
     September 2024: Two papers are accepted by <strong>NeurIPS 2024</strong>. Congratulations to all my collaborators!
     <ul style="margin:8px 0 0 20px; padding-left:0;">
       <li><em>Getting More Juice Out of the SFT Data: Reward Learning from Human Demonstration Improves SFT for LLM Alignment</em></li>
-      <li>Paper B: <em>SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining</em></li>
+      <li><em>SLTrain: a sparse plus low-rank approach for parameter and memory efficient pretraining</em></li>
     </ul>
   </li>
 
