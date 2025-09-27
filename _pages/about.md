@@ -18,7 +18,11 @@ My research lies at the intersection of applied mathematics, optimization theory
 - Efficient pre-training and fine-tuning methods for LLMs, bridging optimization principles with practical deployment.
 
 ## News
+------
 
+<div style="height: 400px; overflow-y: auto; border: 1px solid #e1e5e9; padding: 20px; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <ul style="margin: 0; padding-left: 0; list-style: none;">
+    
 - August 2025: Starting my new job as Research Scientist at Meta!
 
 - February 2025: paper "*Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization*" is accepted by **Pacific Journal of Optimization**.
@@ -41,3 +45,8 @@ My research lies at the intersection of applied mathematics, optimization theory
 - July 2024: A new grant “Bi-Level Optimization for Hierarchical Machine Learning Problems: Models, Algorithms and Applications” is awarded from **NSF**. I'm excited to be the co-PI of this project with Prof Hong!
 
 - May 2024: Paper "*Revisiting Zeroth-Order Optimization for Memory-Efficient LLM Fine-Tuning: A Benchmark*" is accepted by **ICML 2024**. Congratulations to all my collaborators!
+
+</ul>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
