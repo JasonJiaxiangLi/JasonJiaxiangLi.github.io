@@ -48,7 +48,7 @@ My research lies at the intersection of applied mathematics, optimization theory
 </ul>
 </div>
 
-<div style="margin-top:30px; text-align:center; overflow:hidden;">
+<div style="margin-top:30px; text-align:left; overflow:hidden;">
   <script type="text/javascript" id="clustrmaps" 
   src="//clustrmaps.com/map_v2.js?d=d2-9GfXbNZ_CT16pVbPIUgTFUp-1XfNBsc7byNJ2bas&cl=ffffff&w=200&h=120">
 </script>
