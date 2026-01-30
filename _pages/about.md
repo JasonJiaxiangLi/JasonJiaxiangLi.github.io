@@ -20,7 +20,9 @@ My research lies at the intersection of applied mathematics, optimization theory
 ## News
 <div style="height: 800px; overflow-y: auto; border: 1px solid #e1e5e9; padding: 20px; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <ul style="margin: 0; padding-left: 0; list-style: none;">
-    
+
+<li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">January 2026: Paper <em>Muon Outperforms Adam in Tail-End Associative Memory Learning</em> is accepted by <strong>ICLR 2026</strong>. Congratulations to all my collaborators!</li>
+  
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">August 2025: Starting my new job as Research Scientist at <strong>Meta</strong>!</li>
 
 <li style="margin-bottom: 12px; padding: 8px 0; border-bottom: 1px solid #e9ecef;">February 2025: Paper <em>Problem-Parameter-Free Decentralized Nonconvex Stochastic Optimization</em> is accepted by <strong>Pacific Journal of Optimization</strong>.</li>
