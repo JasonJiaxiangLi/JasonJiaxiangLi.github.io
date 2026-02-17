@@ -15,9 +15,6 @@ layout: default
 {% endif %}
 
 <style>
-/* Hide the inline Kramdown TOC — we move it to the sidebar via JS */
-#markdown-toc { display: none; }
-
 /* Algorithm box styles */
 .algo-container { display: flex; gap: 2em; margin: 2em 0; }
 .algo-container .algo-box { flex: 1; min-width: 0; }
@@ -35,11 +32,74 @@ layout: default
 .algo-box .algo-cost { padding-left: 0.5em; margin-top: 0.4em; padding-top: 0.3em; border-top: 1px solid #000; }
 .algo-box .algo-cost strong { font-weight: 700; font-variant: small-caps; font-size: 1.05em; }
 @media (max-width: 768px) { .algo-container { flex-direction: column; } }
+
+/* Kramdown TOC: position as a sticky sidebar via CSS only */
+#markdown-toc {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  width: 180px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+#markdown-toc::before {
+  content: "\f03a  Table of Contents";
+  font-family: "FontAwesome", sans-serif;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 0.75em;
+}
+#markdown-toc li {
+  margin-bottom: 0.3em;
+  list-style: none;
+}
+#markdown-toc > li > a {
+  color: #494e52;
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0.5em;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+#markdown-toc > li > a:hover {
+  color: #000;
+  border-left-color: #ccc;
+}
+#markdown-toc ul {
+  list-style: none;
+  margin: 0.15em 0 0 0;
+  padding-left: 1em;
+}
+#markdown-toc ul li {
+  margin-bottom: 0.15em;
+}
+#markdown-toc ul a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+  padding: 0.1em 0.5em;
+  border-left: 3px solid transparent;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+#markdown-toc ul a:hover {
+  color: #000;
+  border-left-color: #ccc;
+}
+/* Hide TOC on small screens */
+@media (max-width: 1200px) {
+  #markdown-toc { display: none; }
+}
 </style>
 
 <div id="main" role="main" class="blog-post-main">
-  {% include sidebar-toc.html %}
-
   <article class="page" itemscope itemtype="http://schema.org/BlogPosting">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -75,72 +135,14 @@ layout: default
 </div>
 
 <script>
+// Scroll spy for TOC highlighting
 (function() {
-  var tocList = document.getElementById("toc-list");
-  var sidebarToc = document.querySelector(".sidebar-toc");
-  if (!tocList || !sidebarToc) return;
-
-  // Strategy 1: Use Kramdown-generated TOC if available
-  var kramdownToc = document.getElementById("markdown-toc");
-  if (kramdownToc) {
-    tocList.innerHTML = kramdownToc.innerHTML;
-  } else {
-    // Strategy 2: Build TOC from headings
-    var content = document.querySelector(".page__content");
-    if (!content) return;
-    var headings = content.querySelectorAll("h2, h3");
-    if (headings.length === 0) {
-      sidebarToc.style.display = "none";
-      return;
-    }
-    var currentH2Item = null;
-    var currentSubList = null;
-    headings.forEach(function(heading) {
-      if (!heading.id) {
-        heading.id = heading.textContent.trim().toLowerCase()
-          .replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
-      }
-      var li = document.createElement("li");
-      var a = document.createElement("a");
-      a.href = "#" + heading.id;
-      a.textContent = heading.textContent;
-      if (heading.tagName === "H2") {
-        li.appendChild(a);
-        tocList.appendChild(li);
-        currentH2Item = li;
-        currentSubList = null;
-      } else if (heading.tagName === "H3") {
-        if (!currentSubList) {
-          currentSubList = document.createElement("ul");
-          currentSubList.className = "toc__sub-menu";
-          if (currentH2Item) {
-            currentH2Item.appendChild(currentSubList);
-          } else {
-            var wrapLi = document.createElement("li");
-            wrapLi.appendChild(currentSubList);
-            tocList.appendChild(wrapLi);
-          }
-        }
-        li.appendChild(a);
-        currentSubList.appendChild(li);
-      }
-    });
-  }
-
-  // Hide sidebar if TOC is empty
-  if (tocList.children.length === 0) {
-    sidebarToc.style.display = "none";
-    return;
-  }
-
-  // Style sub-menus from Kramdown TOC
-  var subMenus = tocList.querySelectorAll("ul");
-  subMenus.forEach(function(ul) { ul.className = "toc__sub-menu"; });
-
-  // Scroll spy
-  var tocLinks = tocList.querySelectorAll("a");
+  var toc = document.getElementById("markdown-toc");
+  if (!toc) return;
+  var tocLinks = toc.querySelectorAll("a");
   var content = document.querySelector(".page__content");
-  var headingElements = content ? Array.from(content.querySelectorAll("h2, h3")) : [];
+  if (!content) return;
+  var headingElements = Array.from(content.querySelectorAll("h2, h3"));
 
   function updateActiveToc() {
     var scrollPos = window.scrollY + 80;
@@ -151,12 +153,12 @@ layout: default
         break;
       }
     }
-    tocLinks.forEach(function(link) { link.classList.remove("active"); });
+    tocLinks.forEach(function(link) { link.classList.remove("active-toc"); });
     if (activeIndex >= 0) {
       var activeId = headingElements[activeIndex].id;
       tocLinks.forEach(function(link) {
         if (link.getAttribute("href") === "#" + activeId) {
-          link.classList.add("active");
+          link.classList.add("active-toc");
         }
       });
     }

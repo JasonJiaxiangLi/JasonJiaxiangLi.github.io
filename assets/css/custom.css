@@ -177,6 +177,13 @@ a.cite-backref:hover {
   color: #52adc8;
 }
 
+/* ===== Active TOC link highlight ===== */
+#markdown-toc a.active-toc {
+  color: #000;
+  font-weight: 600;
+  border-left-color: #52adc8;
+}
+
 /* ===== Algorithm box styles (LaTeX-like) ===== */
 .algo-container {
   display: flex;
