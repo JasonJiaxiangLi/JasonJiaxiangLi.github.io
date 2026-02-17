@@ -52,7 +52,7 @@ layout: default
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+(function initTOC() {
   var content = document.querySelector(".page__content");
   var tocList = document.getElementById("toc-list");
   if (!content || !tocList) return;
@@ -130,5 +130,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", updateActiveToc);
   updateActiveToc();
-});
+})();
 </script>

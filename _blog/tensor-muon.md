@@ -6,12 +6,77 @@ tags: [math, optimization]
 excerpt: ""
 ---
 
+<style>
+/* Algorithm box styles (inline for reliable rendering) */
+.algo-container {
+  display: flex;
+  gap: 2em;
+  margin: 2em 0;
+}
+.algo-container .algo-box {
+  flex: 1;
+  min-width: 0;
+}
+.algo-box {
+  border: none;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 0.8em 0;
+  margin: 1.5em 0;
+  background: transparent;
+  font-family: "Computer Modern", "Latin Modern", "STIX Two Text", Georgia, "Times New Roman", serif;
+  font-size: 0.93em;
+  line-height: 1.7;
+}
+.algo-box .algo-title {
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #000;
+}
+.algo-box .algo-io {
+  margin: 0.2em 0;
+  padding-left: 0.5em;
+}
+.algo-box .algo-io strong {
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 1.05em;
+}
+.algo-box ol {
+  margin: 0.3em 0 0.5em 0;
+  padding-left: 2.2em;
+  list-style-type: decimal;
+}
+.algo-box ol li {
+  margin-bottom: 0.1em;
+  padding-left: 0.3em;
+}
+.algo-box .algo-cost {
+  padding-left: 0.5em;
+  margin-top: 0.4em;
+  padding-top: 0.3em;
+  border-top: 1px solid #000;
+}
+.algo-box .algo-cost strong {
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 1.05em;
+}
+@media (max-width: 768px) {
+  .algo-container {
+    flex-direction: column;
+  }
+}
+</style>
+
 ## Introduction
 
 In <a href="#ref-muon" class="cite-ref" id="cite-muon">[1]</a>, the authors proposed a brand new optimizer different from Adam-like optimizers, named Muon (<a href="#fig-muon">Figure 1</a>).
 
 <figure id="fig-muon" style="text-align: center;">
-  <img src="/images/blog/muon.png" alt="Muon" width="350">
+  <img src="/images/blog/muon.png" alt="Muon" style="max-width: 350px; width: 100%;">
   <figcaption>Figure 1: Muon optimizer overview from <a href="#ref-muon">[1]</a>.</figcaption>
 </figure>
 
@@ -37,7 +102,7 @@ def newtonschulz5(G, steps=5, eps=1e-7):
 This NewtonSchulz is exactly applying the polynomial $p(x)=ax+bx^3+cx^5$ for five times on the input matrix signular values. The specific polynomial $(a, b, c) = (3.4445, -4.7750, 2.0315)$ looks as follows:
 
 <figure id="fig-ns" style="text-align: center;">
-  <img src="/images/blog/ns-polynomial.png" alt="NS" width="400">
+  <img src="/images/blog/ns-polynomial.png" alt="NS" style="max-width: 400px; width: 100%;">
   <figcaption>Figure 2: Applying the NS polynomial (From <a href="#ref-muon">[1]</a>).</figcaption>
 </figure>
 
@@ -95,7 +160,7 @@ The key difference: TEON orthogonalizes one large $m\times nK$ matrix, coupling 
 I didn't have time to compare the tSVD-Muon with TEON in detail. Below I only incude a preliminary comparison of the proposed tSVD-Muon to the SOTA NorMuon implementation in the <a href="https://github.com/KellerJordan/modded-nanogpt">modded-nanogpt</a> repo (I basically just made minimum changes over the NorMuon implementation in [this file](https://github.com/KellerJordan/modded-nanogpt/blob/e22a34bb076cba691977c5da04e490938ff2efbe/train_gpt.py#L329)). The result is presented in <a href="#fig-res">Figure 3</a>. Note that I did a small sweep over the learning rate for tSVD Muon.
 
 <figure id="fig-res" style="text-align: center;">
-  <img src="/images/blog/tsvd-Muon.png" alt="MuonRes" width="350">
+  <img src="/images/blog/tsvd-Muon.png" alt="MuonRes" style="max-width: 350px; width: 100%;">
   <figcaption>Figure 3: Result of tSVD Muon on GPT 120M model.</figcaption>
 </figure>
 
