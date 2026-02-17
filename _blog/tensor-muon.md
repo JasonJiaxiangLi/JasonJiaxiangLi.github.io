@@ -6,70 +6,8 @@ tags: [math, optimization]
 excerpt: ""
 ---
 
-<style>
-/* Algorithm box styles (inline for reliable rendering) */
-.algo-container {
-  display: flex;
-  gap: 2em;
-  margin: 2em 0;
-}
-.algo-container .algo-box {
-  flex: 1;
-  min-width: 0;
-}
-.algo-box {
-  border: none;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  padding: 0.8em 0;
-  margin: 1.5em 0;
-  background: transparent;
-  font-family: "Computer Modern", "Latin Modern", "STIX Two Text", Georgia, "Times New Roman", serif;
-  font-size: 0.93em;
-  line-height: 1.7;
-}
-.algo-box .algo-title {
-  font-weight: 700;
-  font-size: 1em;
-  margin-bottom: 0.3em;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #000;
-}
-.algo-box .algo-io {
-  margin: 0.2em 0;
-  padding-left: 0.5em;
-}
-.algo-box .algo-io strong {
-  font-weight: 700;
-  font-variant: small-caps;
-  font-size: 1.05em;
-}
-.algo-box ol {
-  margin: 0.3em 0 0.5em 0;
-  padding-left: 2.2em;
-  list-style-type: decimal;
-}
-.algo-box ol li {
-  margin-bottom: 0.1em;
-  padding-left: 0.3em;
-}
-.algo-box .algo-cost {
-  padding-left: 0.5em;
-  margin-top: 0.4em;
-  padding-top: 0.3em;
-  border-top: 1px solid #000;
-}
-.algo-box .algo-cost strong {
-  font-weight: 700;
-  font-variant: small-caps;
-  font-size: 1.05em;
-}
-@media (max-width: 768px) {
-  .algo-container {
-    flex-direction: column;
-  }
-}
-</style>
+* TOC
+{:toc}
 
 ## Introduction
 

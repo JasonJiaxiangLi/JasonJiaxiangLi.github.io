@@ -14,6 +14,29 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<style>
+/* Hide the inline Kramdown TOC — we move it to the sidebar via JS */
+#markdown-toc { display: none; }
+
+/* Algorithm box styles */
+.algo-container { display: flex; gap: 2em; margin: 2em 0; }
+.algo-container .algo-box { flex: 1; min-width: 0; }
+.algo-box {
+  border: none; border-top: 2px solid #000; border-bottom: 2px solid #000;
+  padding: 0.8em 0; margin: 1.5em 0; background: transparent;
+  font-family: "Computer Modern", "Latin Modern", "STIX Two Text", Georgia, "Times New Roman", serif;
+  font-size: 0.93em; line-height: 1.7;
+}
+.algo-box .algo-title { font-weight: 700; font-size: 1em; margin-bottom: 0.3em; padding-bottom: 0.3em; border-bottom: 1px solid #000; }
+.algo-box .algo-io { margin: 0.2em 0; padding-left: 0.5em; }
+.algo-box .algo-io strong { font-weight: 700; font-variant: small-caps; font-size: 1.05em; }
+.algo-box ol { margin: 0.3em 0 0.5em 0; padding-left: 2.2em; list-style-type: decimal; }
+.algo-box ol li { margin-bottom: 0.1em; padding-left: 0.3em; }
+.algo-box .algo-cost { padding-left: 0.5em; margin-top: 0.4em; padding-top: 0.3em; border-top: 1px solid #000; }
+.algo-box .algo-cost strong { font-weight: 700; font-variant: small-caps; font-size: 1.05em; }
+@media (max-width: 768px) { .algo-container { flex-direction: column; } }
+</style>
+
 <div id="main" role="main" class="blog-post-main">
   {% include sidebar-toc.html %}
 
@@ -52,75 +75,86 @@ layout: default
 </div>
 
 <script>
-(function initTOC() {
-  var content = document.querySelector(".page__content");
+(function() {
   var tocList = document.getElementById("toc-list");
-  if (!content || !tocList) return;
+  var sidebarToc = document.querySelector(".sidebar-toc");
+  if (!tocList || !sidebarToc) return;
 
-  var headings = content.querySelectorAll("h2, h3");
-  if (headings.length === 0) {
-    document.querySelector(".sidebar-toc").style.display = "none";
+  // Strategy 1: Use Kramdown-generated TOC if available
+  var kramdownToc = document.getElementById("markdown-toc");
+  if (kramdownToc) {
+    tocList.innerHTML = kramdownToc.innerHTML;
+  } else {
+    // Strategy 2: Build TOC from headings
+    var content = document.querySelector(".page__content");
+    if (!content) return;
+    var headings = content.querySelectorAll("h2, h3");
+    if (headings.length === 0) {
+      sidebarToc.style.display = "none";
+      return;
+    }
+    var currentH2Item = null;
+    var currentSubList = null;
+    headings.forEach(function(heading) {
+      if (!heading.id) {
+        heading.id = heading.textContent.trim().toLowerCase()
+          .replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
+      }
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = "#" + heading.id;
+      a.textContent = heading.textContent;
+      if (heading.tagName === "H2") {
+        li.appendChild(a);
+        tocList.appendChild(li);
+        currentH2Item = li;
+        currentSubList = null;
+      } else if (heading.tagName === "H3") {
+        if (!currentSubList) {
+          currentSubList = document.createElement("ul");
+          currentSubList.className = "toc__sub-menu";
+          if (currentH2Item) {
+            currentH2Item.appendChild(currentSubList);
+          } else {
+            var wrapLi = document.createElement("li");
+            wrapLi.appendChild(currentSubList);
+            tocList.appendChild(wrapLi);
+          }
+        }
+        li.appendChild(a);
+        currentSubList.appendChild(li);
+      }
+    });
+  }
+
+  // Hide sidebar if TOC is empty
+  if (tocList.children.length === 0) {
+    sidebarToc.style.display = "none";
     return;
   }
 
-  // Build TOC
-  var currentH2Item = null;
-  var currentSubList = null;
-
-  headings.forEach(function (heading) {
-    // Ensure heading has an id
-    if (!heading.id) {
-      heading.id = heading.textContent.trim().toLowerCase()
-        .replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
-    }
-
-    var li = document.createElement("li");
-    var a = document.createElement("a");
-    a.href = "#" + heading.id;
-    a.textContent = heading.textContent;
-
-    if (heading.tagName === "H2") {
-      li.appendChild(a);
-      tocList.appendChild(li);
-      currentH2Item = li;
-      currentSubList = null;
-    } else if (heading.tagName === "H3") {
-      if (!currentSubList) {
-        currentSubList = document.createElement("ul");
-        currentSubList.className = "toc__sub-menu";
-        if (currentH2Item) {
-          currentH2Item.appendChild(currentSubList);
-        } else {
-          tocList.appendChild(document.createElement("li")).appendChild(currentSubList);
-        }
-      }
-      li.appendChild(a);
-      currentSubList.appendChild(li);
-    }
-  });
+  // Style sub-menus from Kramdown TOC
+  var subMenus = tocList.querySelectorAll("ul");
+  subMenus.forEach(function(ul) { ul.className = "toc__sub-menu"; });
 
   // Scroll spy
   var tocLinks = tocList.querySelectorAll("a");
-  var headingElements = Array.from(headings);
+  var content = document.querySelector(".page__content");
+  var headingElements = content ? Array.from(content.querySelectorAll("h2, h3")) : [];
 
   function updateActiveToc() {
     var scrollPos = window.scrollY + 80;
     var activeIndex = -1;
-
     for (var i = headingElements.length - 1; i >= 0; i--) {
       if (headingElements[i].offsetTop <= scrollPos) {
         activeIndex = i;
         break;
       }
     }
-
-    tocLinks.forEach(function (link) {
-      link.classList.remove("active");
-    });
-
+    tocLinks.forEach(function(link) { link.classList.remove("active"); });
     if (activeIndex >= 0) {
       var activeId = headingElements[activeIndex].id;
-      tocLinks.forEach(function (link) {
+      tocLinks.forEach(function(link) {
         if (link.getAttribute("href") === "#" + activeId) {
           link.classList.add("active");
         }
