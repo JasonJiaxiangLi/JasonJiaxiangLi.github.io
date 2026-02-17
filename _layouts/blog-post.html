@@ -1,0 +1,134 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main" class="blog-post-main">
+  {% include sidebar-toc.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.date %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Created:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.last_modified_at %} | <strong>Last modified:</strong> <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time>{% endif %}</p>
+          {% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+    </div>
+  </article>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var content = document.querySelector(".page__content");
+  var tocList = document.getElementById("toc-list");
+  if (!content || !tocList) return;
+
+  var headings = content.querySelectorAll("h2, h3");
+  if (headings.length === 0) {
+    document.querySelector(".sidebar-toc").style.display = "none";
+    return;
+  }
+
+  // Build TOC
+  var currentH2Item = null;
+  var currentSubList = null;
+
+  headings.forEach(function (heading) {
+    // Ensure heading has an id
+    if (!heading.id) {
+      heading.id = heading.textContent.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, "").replace(/\s+/g, "-");
+    }
+
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    a.href = "#" + heading.id;
+    a.textContent = heading.textContent;
+
+    if (heading.tagName === "H2") {
+      li.appendChild(a);
+      tocList.appendChild(li);
+      currentH2Item = li;
+      currentSubList = null;
+    } else if (heading.tagName === "H3") {
+      if (!currentSubList) {
+        currentSubList = document.createElement("ul");
+        currentSubList.className = "toc__sub-menu";
+        if (currentH2Item) {
+          currentH2Item.appendChild(currentSubList);
+        } else {
+          tocList.appendChild(document.createElement("li")).appendChild(currentSubList);
+        }
+      }
+      li.appendChild(a);
+      currentSubList.appendChild(li);
+    }
+  });
+
+  // Scroll spy
+  var tocLinks = tocList.querySelectorAll("a");
+  var headingElements = Array.from(headings);
+
+  function updateActiveToc() {
+    var scrollPos = window.scrollY + 80;
+    var activeIndex = -1;
+
+    for (var i = headingElements.length - 1; i >= 0; i--) {
+      if (headingElements[i].offsetTop <= scrollPos) {
+        activeIndex = i;
+        break;
+      }
+    }
+
+    tocLinks.forEach(function (link) {
+      link.classList.remove("active");
+    });
+
+    if (activeIndex >= 0) {
+      var activeId = headingElements[activeIndex].id;
+      tocLinks.forEach(function (link) {
+        if (link.getAttribute("href") === "#" + activeId) {
+          link.classList.add("active");
+        }
+      });
+    }
+  }
+
+  window.addEventListener("scroll", updateActiveToc);
+  updateActiveToc();
+});
+</script>

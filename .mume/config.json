@@ -1,0 +1,8 @@
+{
+  "mathRenderingOption": "MathJax",
+  "mathjaxConfig": {
+    "TeX": {
+      "equationNumbers": { "autoNumber": "AMS" }
+    }
+  }
+}

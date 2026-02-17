@@ -17,6 +17,8 @@ My research lies at the intersection of applied mathematics, optimization theory
 - Theoretical foundations of reinforcement learning, especially policy-based methods, and their role in aligning large language models (LLMs).
 - Efficient pre-training and fine-tuning methods for LLMs, bridging optimization principles with practical deployment.
 
+<hr style="border: none; border-top: 1px solid #ddd; margin: 2em 0;">
+
 ## News
 <div style="height: 800px; overflow-y: auto; border: 1px solid #e1e5e9; padding: 20px; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <ul style="margin: 0; padding-left: 0; list-style: none;">

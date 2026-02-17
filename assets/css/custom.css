@@ -7,3 +7,245 @@
 .clustrmap img {
   max-height: 60px;
 }
+
+/* ===== Blog Listing Styles ===== */
+.blog-listing__item {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.blog-listing__item:last-child {
+  border-bottom: none;
+}
+
+.blog-listing__item .archive__item-title {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.blog-listing__item .archive__item-excerpt {
+  margin-top: 0.25em;
+  color: #494e52;
+  font-size: 0.9em;
+}
+
+/* ===== Left Sidebar TOC Styles ===== */
+
+/* Override theme's .sidebar li font-size (0.75em) for TOC */
+.sidebar-toc li {
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+.sidebar-toc .toc-nav {
+  background: transparent;
+  padding: 0;
+}
+
+.sidebar-toc .nav__title {
+  margin: 0 0 0.75em 0;
+  padding: 0;
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #333;
+}
+
+.sidebar-toc .toc__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-toc .toc__menu li {
+  margin-bottom: 0.3em;
+}
+
+.sidebar-toc .toc__menu a {
+  color: #494e52;
+  text-decoration: none;
+  display: block;
+  padding: 0.2em 0.5em;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sidebar-toc .toc__menu a:hover {
+  color: #000;
+  border-left-color: #ccc;
+}
+
+.sidebar-toc .toc__menu a.active {
+  color: #000;
+  font-weight: 600;
+  border-left-color: #52adc8;
+}
+
+.sidebar-toc .toc__sub-menu {
+  list-style: none;
+  margin: 0.15em 0 0 0;
+  padding-left: 1em;
+}
+
+.sidebar-toc .toc__sub-menu li {
+  margin-bottom: 0.15em;
+  font-size: 16px !important;
+}
+
+.sidebar-toc .toc__sub-menu a {
+  color: #666;
+}
+
+.sidebar-toc .toc__sub-menu a:hover {
+  color: #000;
+}
+
+.sidebar-toc .toc__sub-menu a.active {
+  color: #000;
+}
+
+/* Remove the prefix gap on blog posts so title aligns with TOC top */
+.blog-post-main .page {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* ===== Blog post figure styles ===== */
+.blog-post-main figure {
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-post-main figure figcaption {
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== Blog post code block styles ===== */
+.blog-post-main div.highlighter-rouge,
+.blog-post-main figure.highlight {
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.blog-post-main div.highlighter-rouge .highlight,
+.blog-post-main figure.highlight .highlight {
+  font-size: 0.9em !important;
+}
+
+/* ===== Cross-reference styles ===== */
+.references-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: ref-counter;
+}
+
+.references-list li {
+  counter-increment: ref-counter;
+  margin-bottom: 0.6em;
+  padding-left: 2.2em;
+  position: relative;
+}
+
+.references-list li::before {
+  content: "[" counter(ref-counter) "]";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+a.cite-ref {
+  text-decoration: none;
+  color: #52adc8;
+  font-weight: 500;
+}
+
+a.cite-ref:hover {
+  text-decoration: underline;
+}
+
+a.cite-backref {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #999;
+  margin-left: 0.3em;
+}
+
+a.cite-backref:hover {
+  color: #52adc8;
+}
+
+/* ===== Algorithm box styles (LaTeX-like) ===== */
+.algo-container {
+  display: flex;
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.algo-container .algo-box {
+  flex: 1;
+  min-width: 0;
+}
+
+.algo-box {
+  border: none;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 0.8em 0;
+  margin: 1.5em 0;
+  background: transparent;
+  font-family: "Computer Modern", "Latin Modern", "STIX Two Text", Georgia, "Times New Roman", serif;
+  font-size: 0.93em;
+  line-height: 1.7;
+}
+
+.algo-box .algo-title {
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #000;
+}
+
+.algo-box .algo-io {
+  margin: 0.2em 0;
+  padding-left: 0.5em;
+}
+
+.algo-box .algo-io strong {
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 1.05em;
+}
+
+.algo-box ol {
+  margin: 0.3em 0 0.5em 0;
+  padding-left: 2.2em;
+  list-style-type: decimal;
+}
+
+.algo-box ol li {
+  margin-bottom: 0.1em;
+  padding-left: 0.3em;
+}
+
+.algo-box .algo-cost {
+  padding-left: 0.5em;
+  margin-top: 0.4em;
+  padding-top: 0.3em;
+  border-top: 1px solid #000;
+}
+
+.algo-box .algo-cost strong {
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 1.05em;
+}
+
+@media (max-width: 768px) {
+  .algo-container {
+    flex-direction: column;
+  }
+}
