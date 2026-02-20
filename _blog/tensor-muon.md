@@ -1,7 +1,7 @@
 ---
 title: "Tensor descent: when and how to optimize in high dimensions?"
 date: 2026-02-16
-last_modified_at: 2026-02-16
+last_modified_at: 2026-02-19
 tags: [math, optimization]
 excerpt: ""
 ---
@@ -95,7 +95,7 @@ Both TEON and the proposed tSVD-based approach stack layer gradients into a tens
 
 The key difference: TEON orthogonalizes one large $m\times nK$ matrix, coupling layers through column-concatenation. tSVD-Muon orthogonalizes $K$ separate $m\times n$ matrices in the Fourier domain, where the FFT/IFFT provides a different form of cross-layer coupling via circulant structure. When $K$ is small (e.g., 2), the FFT reduces to simple sums and differences of the faces, making tSVD-Muon easy to implement and interpret.
 
-I didn't have time to compare the tSVD-Muon with TEON in detail. Below I only incude a preliminary comparison of the proposed tSVD-Muon to the SOTA NorMuon implementation in the <a href="https://github.com/KellerJordan/modded-nanogpt">modded-nanogpt</a> repo (I basically just made minimum changes over the NorMuon implementation in [this file](https://github.com/KellerJordan/modded-nanogpt/blob/e22a34bb076cba691977c5da04e490938ff2efbe/train_gpt.py#L329)). The result is presented in <a href="#fig-res">Figure 3</a>. Note that I did a small sweep over the learning rate for tSVD Muon.
+I didn't have time to compare the tSVD-Muon with TEON in detail. Below I only incude a preliminary comparison of the proposed tSVD-Muon to the SOTA NorMuon implementation in the <a href="https://github.com/KellerJordan/modded-nanogpt">modded-nanogpt</a> repo (I basically just made minimum changes over the NorMuon implementation in [this file](https://github.com/KellerJordan/modded-nanogpt/blob/e22a34bb076cba691977c5da04e490938ff2efbe/train_gpt.py#L329)). The result is presented in <a href="#fig-res">Figure 3</a>. Note that I did a small sweep over the learning rate for tSVD Muon, also I used two B200 with slight change on the triton kernels, so the val loss didn't exactly match the 3.28 number.
 
 <figure id="fig-res" style="text-align: center;">
   <img src="/images/blog/tsvd-Muon.png" alt="MuonRes" style="max-width: 350px; width: 100%;">
