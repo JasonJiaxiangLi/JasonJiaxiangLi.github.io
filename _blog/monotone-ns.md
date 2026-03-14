@@ -7,6 +7,9 @@ excerpt: ""
 hidden: false
 ---
 
+* TOC
+{:toc}
+
 ## NS iteration in Muon
 In <a href="#ref-muon" class="cite-ref" id="cite-muon">[1]</a>, the authors proposed a brand new optimizer different from Adam-like optimizers, named Muon (<a href="#fig-muon">Figure 1</a>).
 
