@@ -262,7 +262,7 @@ A few observations:
 I include a preliminary comparison of the proposed monotone NS (orange curve) against the Polar Express implementation in the <a href="https://github.com/KellerJordan/modded-nanogpt">modded-nanogpt</a> repo. The result is presented in <a href="#fig-res">Figure 5</a> (note that I used the default hyperparameters; I also used two B200s with slight changes to the Triton kernels, so the val loss does not exactly match the reported 3.28 number).
 
 <figure id="fig-res" style="text-align: center;">
-  <img src="/images/blog/monotone-ns-modded-nanogpt.png" alt="MuonRes" style="max-width: 350px; width: 100%;">
+  <img src="/images/blog/monotone-ns-modded-nanogpt.png" alt="MuonRes" style="max-width: 5000px; width: 100%;">
   <figcaption>Figure 5: Result of monotone NS on GPT 120M model.</figcaption>
 </figure>
 
