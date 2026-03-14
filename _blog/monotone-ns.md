@@ -4,7 +4,7 @@ date: 2026-03-14
 last_modified_at: 2026-03-14
 tags: [math, optimization]
 excerpt: ""
-hidden: true
+hidden: false
 ---
 
 ## NS iteration in Muon
