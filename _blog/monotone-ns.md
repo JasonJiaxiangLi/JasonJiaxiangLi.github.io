@@ -1,5 +1,5 @@
 ---
-title: "Better NS iteration? Exploring alternative approximation to matrix sign"
+title: "Monotone Newton-Schulz: Near-Monotone Polynomial Iterations for Matrix Sign"
 date: 2026-03-14
 last_modified_at: 2026-03-14
 tags: [math, optimization]
@@ -279,3 +279,15 @@ It is encouraging to see a slight advantage of monotone NS over Polar Express; h
   <li id="ref-chebyshev">E. Grishina, M. Smirnov, and M. Rakhuba, <em>Accelerating Newton-Schulz Iteration for Orthogonalization via Chebyshev-type Polynomials</em>, <a href="https://arxiv.org/abs/2506.10935">arXiv:2506.10935</a>, 2025. <a href="#cite-chebyshev" class="cite-backref" title="Jump back to citation">&uarr;</a></li>
   <li id="ref-polar">N. Amsel et al., <em>The Polar Express: Optimal Matrix Sign Methods and Their Application to the Muon Algorithm</em>, <a href="https://arxiv.org/abs/2505.16932">arXiv:2505.16932</a>, 2025. <a href="#cite-polar" class="cite-backref" title="Jump back to citation">&uarr;</a></li>
 </ol>
+
+If you find this post useful, you can cite it as:
+
+```bibtex
+@misc{li2026monotonens,
+  author = {Li, Jiaxiang},
+  title  = {Monotone Newton-Schulz: Near-Monotone Polynomial Iterations for Matrix Sign},
+  year   = {2026},
+  url    = {https://jasonjiaxiangli.github.io/blog/monotone-ns/},
+  note   = {Blog post}
+}
+```
