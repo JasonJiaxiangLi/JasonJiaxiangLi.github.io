@@ -104,8 +104,22 @@
   color: #000;
 }
 
-/* Remove the prefix gap on blog posts so title aligns with TOC top */
+/* Blog post: TOC sits inside the same 1280px centered block as the masthead.
+   padding-left aligns blog content with the "Publications" nav link (~280px from container edge). */
+.blog-post-main {
+  padding-left: 280px !important;
+  box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  .blog-post-main {
+    padding-left: 1em !important;
+  }
+}
+
+/* Remove Susy grid offset — let #main padding control positioning */
 .blog-post-main .page {
+  float: none !important;
+  width: 100% !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
 }

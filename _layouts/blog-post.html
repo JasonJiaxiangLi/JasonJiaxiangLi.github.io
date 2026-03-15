@@ -34,10 +34,11 @@ layout: default
 @media (max-width: 768px) { .algo-container { flex-direction: column; } }
 
 /* Kramdown TOC: position as a sticky sidebar via CSS only */
+/* Align TOC left edge with the masthead title (centered 1280px + 1em padding) */
 #markdown-toc {
   position: fixed;
   top: 130px;
-  left: 20px;
+  left: max(20px, calc(50vw - 640px + 1em));
   width: 180px;
   max-height: calc(100vh - 120px);
   overflow-y: auto;
