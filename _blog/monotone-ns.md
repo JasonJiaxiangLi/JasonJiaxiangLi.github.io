@@ -1,7 +1,7 @@
 ---
 title: "Monotone Newton-Schulz: Near-Monotone Polynomial Iterations for Matrix Sign"
 date: 2026-03-14
-last_modified_at: 2026-03-14
+last_modified_at: 2026-03-16
 tags: [math, optimization]
 excerpt: ""
 hidden: false
