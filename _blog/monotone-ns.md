@@ -264,10 +264,27 @@ A few observations:
 
 I include a preliminary comparison of the proposed monotone NS (orange curve) against the Polar Express implementation in the <a href="https://github.com/KellerJordan/modded-nanogpt">modded-nanogpt</a> repo. The result is presented in <a href="#fig-res">Figure 5</a> (note that I used the default hyperparameters; I also used two B200s with slight changes to the Triton kernels, so the val loss does not exactly match the reported 3.28 number).
 
-<figure id="fig-res" style="text-align: center;">
+<!-- <figure id="fig-res" style="text-align: center;">
   <img src="/images/blog/monotone-ns-modded-nanogpt.png" alt="MuonRes" style="max-width: 600px; width: 100%;">
   <figcaption>Figure 5: Result of monotone NS on GPT 120M model.</figcaption>
+</figure> -->
+
+<figure id="fig-interactive" style="text-align: center;">
+  <div id="loss-chart"></div>
+  <figcaption style="margin-top: 1em;">Figure 5: Result of monotone NS on GPT 120M model.</figcaption>
 </figure>
+<script src="/assets/js/wandb-chart.js"></script>
+<script>
+renderWandbChart('loss-chart', '/assets/data/monotone-ns-loss.json', {
+  xLabel: 'Step',
+  yLabel: 'Val Loss',
+  height: 400,
+  runs: [
+    { id: '424d5912-d64c-4bda-8d4d-c233a20c6b29', name: 'Baseline NS', color: '#1f77b4', width: 2, dash: 'solid' },
+    { id: 'sksxhyyg', name: 'Monotone NS', color: '#ff7f0e', width: 2, dash: 'dash' },
+  ]
+});
+</script>
 
 It is encouraging to see a slight advantage of monotone NS over Polar Express; however, this might simply be due to random seed variation. It remains to be seen whether this advantage holds in larger-scale experiments.
 
