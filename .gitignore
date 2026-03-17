@@ -2,3 +2,4 @@ _site/
 .DS_Store
 _blog/blog_tests/
 CLAUDE.md
+.claude/
