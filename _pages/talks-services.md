@@ -5,16 +5,17 @@ permalink: /talksandmore/
 author_profile: true
 ---
 
-## Invited and Contributed Talks
-  + International Conference on Continuous Optimization (ICCOPT), Los Angeles, 2025
-  + INFORMS Annual Meeting, Seattle, October 2024
-  + INFORMS Optimization Society Conference, Houston, March 2024
-  + INFORMS Optimization Society Conference, Greenville, March 2022
-  + Modeling and Optimization: Theory and Applications (MOPTA), August 2021
-  + SIAM Conference on Optimization, July 2021
+## Invited Talks and Organization
+  + Session organizer at the INFORMS Optimization Society Conference, Atlanta, March 2026
+  + Speaker at the International Conference on Continuous Optimization (ICCOPT), Los Angeles, 2025
+  + Speaker at the INFORMS Annual Meeting, Seattle, October 2024
+  + Speaker at the INFORMS Optimization Society Conference, Houston, March 2024
+  + Speaker at the INFORMS Optimization Society Conference, Greenville, March 2022
+  + Speaker at the Modeling and Optimization: Theory and Applications (MOPTA), August 2021
+  + Speaker at the SIAM Conference on Optimization, July 2021
 
 ## Paper Reviewer
-  + Journal: INFORMS Journal on Computing, Information and Inference: A Journal of the IMA, JMLR, Computational Optimization and Applications, Journal of Scientific Computing, Journal of Global Optimization, Journal of Optimization Theory and Applications
+  + Journal: INFORMS Journal on Computing, Information and Inference: A Journal of the IMA, JMLR, Computational Optimization and Applications, Journal of Scientific Computing, Journal of Global Optimization, Journal of Optimization Theory and Applications, IEEE TSP
   + Conferences: AISTATS (2021, 2022, 2023), ICML (2022, 2024, 2025), NeurIPS (2023, 2024, 2025), ICLR (2023, 2024), AAAI (2024)
   + Top reviewer for NeurIPS 2024
 
