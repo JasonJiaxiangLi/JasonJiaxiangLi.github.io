@@ -91,7 +91,36 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
 #main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.2em 1em 3.5em;
+  padding: 1em 1em 3.5em;
+}
+
+/* Force sidebar and main content to align at the same top (desktop) by
+   making #main a flex container. Theme uses Susy floats; flex overrides
+   that and guarantees both children start at flex-start (same y). */
+@media (min-width: 1200px) {
+  #main {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 1.5em;
+  }
+  #main > .sidebar.sticky {
+    width: 175px !important;
+    flex: 0 0 175px !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #main > .page,
+  #main > .archive {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+  }
+  /* The Susy prefix (.5 of 12) was applied via span() — kill any leftover */
+  .page__inner-wrap { margin: 0 !important; padding: 0 !important; }
 }
 
 /* ---------- Inner pages: full-width archive (no sidebar) ----------
@@ -142,12 +171,33 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   opacity: 1;
   filter: none;
 }
-.sidebar.sticky { padding-top: 0.5em; }
-.author__avatar { padding: 0; }
+/* ----- Align photo top with first text line ----- */
+/* Push the avatar DOWN to match where prose starts inside <article.page>.
+   The avatar is bumped slightly more than the text's natural top offset so
+   the photo's TOP EDGE lines up with the cap-height of "Hi", not the line-box top. */
+.sidebar.sticky .author__avatar {
+  margin-top: 0.4em !important;
+  padding-top: 0 !important;
+}
+/* Hide empty <header> in the single layout (homepage) so text starts at top */
+.page > .page__inner-wrap > header:not(:has(*)) {
+  display: none !important;
+}
+.sidebar.sticky { padding-top: 0 !important; margin-top: 0 !important; }
+/* Strip any default top spacing on the first content element */
+.page__content > p:first-child,
+.page__content > h1:first-child,
+.page__content > h2:first-child,
+.page__content > ul:first-child,
+.page > header:empty,
+.page > .page__inner-wrap > header:empty { margin-top: 0 !important; padding-top: 0 !important; }
+.page > header:empty,
+.page > .page__inner-wrap > header:empty { display: none !important; }
 .author__avatar img {
   border-radius: 2px;
   max-width: 140px;
-  border: 1px solid var(--rule);
+  border: none !important;
+  padding: 0 !important;
   filter: grayscale(0.05);
 }
 .author__name {
@@ -156,6 +206,16 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   font-size: 1.1em;
   margin: 0.7em 0 0.15em;
   letter-spacing: -0.005em;
+}
+.author__name-zh {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Source Han Serif",
+               "Songti SC", "STSong", "PingFang SC", var(--serif), serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0.05em 0 0.35em;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
 }
 .author__bio {
   font-family: var(--serif);
@@ -179,7 +239,9 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   letter-spacing: 0.02em;
   color: var(--ink-soft);
   padding: 0.18em 0;
+  margin-bottom: 0 !important;
   border: none;
+  line-height: 1.5;
 }
 .author__urls li i,
 .author__urls li .ai { color: var(--muted); margin-right: 0.4em; }
@@ -188,6 +250,9 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   color: var(--ink-soft);
   text-decoration: none;
   border: none;
+  display: inline;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .author__urls a:hover { color: var(--accent); }
 

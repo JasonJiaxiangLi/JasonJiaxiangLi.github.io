@@ -55,9 +55,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jiaxiang Li"
+  name             : "Jiaxiang (Jason) Li"
+  name_zh          : "李佳翔"
   avatar           : "jiaxiang_caliroadno1.jpg"
-  bio              : "Ph.D. in Applied Mathematics"
+  bio              : "Ph.D. in Applied Math"
   location         : "Meta"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

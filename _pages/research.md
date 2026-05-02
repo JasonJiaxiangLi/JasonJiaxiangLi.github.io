@@ -1,8 +1,10 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
 author_profile: false
+redirect_from:
+  - /publications/
 ---
 
 For a complete and frequently updated bibliography, please see my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en). I keep this page as a compact research summary rather than a duplicate publication database.
