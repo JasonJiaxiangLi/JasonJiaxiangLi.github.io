@@ -11,6 +11,7 @@ For a complete and frequently updated bibliography, please see my [Google Schola
 
 ## Research Threads
 
+- **Optimization for machine learning model training.** Algorithm design and convergence theory for training a broad range of ML models, from classical statistical learning to modern deep neural networks.
 - **Optimization for large language models.** Optimizer design, memory-efficient pretraining and fine-tuning, and optimization perspectives on alignment.
 - **Bilevel, minimax, and multi-objective learning.** Theory and algorithms for hierarchical learning problems, including constrained and multi-task settings.
 - **Riemannian and zeroth-order optimization.** Stochastic approximation, derivative estimation, ADMM-type methods, and optimization over manifolds.
@@ -18,9 +19,9 @@ For a complete and frequently updated bibliography, please see my [Google Schola
 
 ## Recent Highlights
 
-- **A minimalist optimizer design for LLM pretraining.** *ICML 2026*
+- **A minimalist optimizer design for LLM pretraining.** *ICML 2026* \[[PDF](https://arxiv.org/pdf/2506.16659)\]
 - **A Tale of Two Problems: Multi-Task Bilevel Learning Meets Equality Constrained Multi-Objective Optimization.** *ICML 2026*
-- **Muon Outperforms Adam in Tail-End Associative Memory Learning.** *ICLR 2026*
+- **Muon Outperforms Adam in Tail-End Associative Memory Learning.** *ICLR 2026* \[[PDF](https://arxiv.org/pdf/2509.26030v2)\]
 - **Joint Demonstration and Preference Learning Improves Policy Alignment with Human Feedback.** *ICLR 2025 (Spotlight)* \[[PDF](https://arxiv.org/pdf/2406.06874)\]
 
 ## Selected Publications

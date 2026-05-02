@@ -10,7 +10,7 @@ redirect_from:
 
 Hi, welcome to my page! I am a Research Scientist at [Meta](https://ai.meta.com/research/). Prior to this, I was a postdoctoral associate at the [Department of Electrical and Computer Engineering](https://cse.umn.edu/ece), [University of Minnesota](https://twin-cities.umn.edu/), mentored by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html) and [Prof. Shuzhong Zhang](https://sites.google.com/umn.edu/shuzhong-zhang). I obtained my Ph.D. degree in Applied Mathematics at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://sqma.rice.edu/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/). My CV is [here](https://JasonJiaxiangLi.github.io/files/CV_Jiaxiang_Li_050126.pdf).
 
-My research lies at the intersection of applied mathematics, optimization theory, and artificial intelligence, with a focus on developing principled algorithms that advance both theoretical foundations and practical applications in modern machine learning. 
+My research focuses on the optimization foundations of machine learning model training, spanning both classical models and modern deep learning systems. I am increasingly drawn to the principles behind large language model (LLM) pretraining and alignment, where I aim to develop algorithms that bridge rigorous theory with the practical demands of modern AI.
 
 <!-- Specifically, I work on:
 - Algorithm design for gradient-based, gradient-free (zeroth-order), and primal–dual methods for large-scale nonconvex optimization, including problems on Riemannian manifolds.
