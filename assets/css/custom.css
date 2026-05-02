@@ -1,311 +1,469 @@
-.site-footer {
-  padding: 10px 0 !important; /* reduce top and bottom padding */
-  margin-top: 20px;
-  line-height: 1.2;
+/* ============================================================
+   Minimalist redesign — Jiaxiang Li
+   Body: Source Serif 4 (serif). Accents: JetBrains Mono.
+   Accent: deep ink-navy (#1a3a5c).
+   ============================================================ */
+
+:root {
+  --ink: #14181d;
+  --ink-soft: #2a3038;
+  --muted: #6b7480;
+  --rule: #e3e6ea;
+  --bg: #fdfcf9;
+  --bg-soft: #f6f4ef;
+  --accent: #1a3a5c;
+  --accent-hover: #2d5685;
+  --serif: "Source Serif 4", "Source Serif Pro", "Newsreader", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-.clustrmap img {
-  max-height: 60px;
+/* ---------- Base ---------- */
+html, body {
+  background: var(--bg);
+  color: var(--ink);
 }
 
-/* ===== Homepage News Styles ===== */
-.news-panel {
-  height: 800px;
-  overflow-y: auto;
-  border: 1px solid #e1e5e9;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+body {
+  font-family: var(--serif);
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.news-list {
-  margin: 0;
-  padding: 0 18px;
-  list-style: none;
+p, li, dl, dd, .page__content, .archive {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.62;
+  color: var(--ink-soft);
 }
 
-.news-item {
-  display: flex;
-  gap: 18px;
-  padding: 16px 0;
-  border-bottom: 1px solid #e3e7eb;
+h1, h2, h3, h4, h5, h6,
+.page__title, .archive__item-title, .author__name {
+  font-family: var(--serif);
+  color: var(--ink);
+  letter-spacing: -0.005em;
 }
 
-.news-item:last-child {
+.page__content h1, .archive h1 { font-size: 1.85em; font-weight: 500; margin: 1.4em 0 0.6em; }
+.page__content h2, .archive h2 {
+  font-size: 1.32em;
+  font-weight: 600;
+  margin: 1.7em 0 0.55em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--rule);
+}
+.page__content h3, .archive h3 { font-size: 1.1em; font-weight: 600; margin: 1.25em 0 0.4em; }
+.page__content h4, .archive h4 { font-size: 1em; font-weight: 600; margin: 1em 0 0.3em; }
+
+h1.page__title, .archive .page__title, .archive > h1.page__title {
+  font-size: 1.95em;
+  font-weight: 500;
+  margin: 0.2em 0 0.9em;
+  padding: 0;
   border-bottom: none;
 }
 
-.news-date {
-  flex: 0 0 112px;
-  color: #5d6975;
-  font-size: 0.85em;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0;
+/* Links — single accent color, subtle underline */
+.page__content a, .archive a, p a, li a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(26, 58, 92, 0.22);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.page__content a:hover, .archive a:hover, p a:hover, li a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
 }
 
-.news-copy {
-  flex: 1;
-  min-width: 0;
-  color: #343a40;
-  line-height: 1.55;
+.page__content strong, .archive strong, strong { font-weight: 600; color: var(--ink); }
+.page__content em, .archive em, em { font-style: italic; }
+
+hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
+
+/* Force-preserve Font Awesome glyph fonts (don't let any of my rules
+   leak into <i> via inheritance and replace the icon font). */
+.fa, .fas, .far, .fal { font-family: "Font Awesome 5 Free" !important; font-weight: 900 !important; }
+.fab { font-family: "Font Awesome 5 Brands" !important; font-weight: 400 !important; }
+.ai { font-family: "academicons" !important; }
+
+/* ---------- Container ---------- */
+#main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.2em 1em 3.5em;
 }
 
-.paper-title {
-  color: #1f2933;
-  font-style: normal;
-  font-weight: 600;
+/* ---------- Inner pages: full-width archive (no sidebar) ----------
+   Only .archive is overridden. .page (homepage with sidebar, blog post)
+   keeps the theme's Susy grid behavior. */
+.archive {
+  width: 100%;
+  float: none;
+  margin-left: 0;
+  padding-right: 0;
 }
 
-.news-papers {
-  margin: 0.45em 0 0;
-  padding: 0;
+/* ---------- Masthead ---------- */
+.masthead {
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+.masthead__inner-wrap {
+  max-width: 1100px;
+  padding: 1.1em 1em;
+  margin: 0 auto;
+}
+.greedy-nav { background: var(--bg); }
+.greedy-nav a {
+  font-family: var(--mono);
+  font-size: 0.82em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: var(--ink);
+}
+.greedy-nav .masthead__menu-item--lg a {
+  font-family: var(--serif);
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  text-transform: none;
+}
+.greedy-nav a:hover {
+  color: var(--accent);
+  background: transparent;
+}
+.greedy-nav .visible-links a:before { background: var(--accent); }
+
+/* ---------- Author profile sidebar (homepage only) ---------- */
+.sidebar {
+  font-family: var(--serif);
+  opacity: 1;
+  filter: none;
+}
+.sidebar.sticky { padding-top: 0.5em; }
+.author__avatar { padding: 0; }
+.author__avatar img {
+  border-radius: 2px;
+  max-width: 140px;
+  border: 1px solid var(--rule);
+  filter: grayscale(0.05);
+}
+.author__name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 0.7em 0 0.15em;
+  letter-spacing: -0.005em;
+}
+.author__bio {
+  font-family: var(--serif);
+  font-size: 0.92em;
+  color: var(--muted);
+  margin: 0 0 0.7em;
+}
+.author__urls-wrapper { font-size: 0.95em; }
+.author__urls-wrapper .btn { display: none; }
+.author__urls {
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  margin: 0;
   list-style: none;
 }
+.author__urls li {
+  font-family: var(--mono);
+  font-size: 0.78em;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  padding: 0.18em 0;
+  border: none;
+}
+.author__urls li i,
+.author__urls li .ai { color: var(--muted); margin-right: 0.4em; }
+.author__urls a {
+  font-family: var(--mono);
+  color: var(--ink-soft);
+  text-decoration: none;
+  border: none;
+}
+.author__urls a:hover { color: var(--accent); }
 
+/* ---------- News panel ---------- */
+.news-panel {
+  height: auto;
+  max-height: 720px;
+  overflow-y: auto;
+  border: none;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 0.5em;
+}
+.news-list { padding: 0; margin: 0; list-style: none; }
+.news-item {
+  display: flex;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.news-item:last-child { border-bottom: none; }
+.news-date {
+  flex: 0 0 110px;
+  font-family: var(--mono);
+  font-size: 0.76em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  text-transform: lowercase;
+  padding-top: 0.3em;
+  line-height: 1.5;
+}
+.news-copy {
+  flex: 1;
+  font-family: var(--serif);
+  font-size: 0.98em;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+.news-copy strong { font-weight: 600; color: var(--ink); }
+.paper-title {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--ink);
+}
+.news-papers { margin: 0.4em 0 0; padding: 0; list-style: none; }
 .news-papers li {
   position: relative;
-  margin: 0.3em 0;
+  margin: 0.25em 0;
   padding-left: 1em;
+  font-size: 0.95em;
 }
-
 .news-papers li::before {
   content: "";
   position: absolute;
-  top: 0.78em;
+  top: 0.7em;
   left: 0;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
-  background: #52adc8;
+  background: var(--accent);
 }
-
 @media (max-width: 600px) {
-  .news-panel {
-    height: 680px;
-  }
-
-  .news-list {
-    padding: 0 14px;
-  }
-
-  .news-item {
-    display: block;
-    padding: 14px 0;
-  }
-
-  .news-date {
-    display: block;
-    margin-bottom: 0.2em;
-  }
+  .news-item { display: block; padding: 14px 0; }
+  .news-date { display: block; margin-bottom: 0.25em; }
 }
 
-/* ===== Blog Listing Styles ===== */
-.blog-listing__item {
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #e1e1e1;
+/* ---------- Archive (publications, talks) lists ---------- */
+.archive .page__content ul {
+  margin-left: 0;
+  padding-left: 1.05em;
+  list-style: disc;
 }
+.archive .page__content ul li {
+  margin-bottom: 0.5em;
+  line-height: 1.55;
+}
+.archive .page__content ul li::marker { color: var(--muted); }
 
-.blog-listing__item:last-child {
+/* ---------- Footer ---------- */
+.page__footer {
+  background: var(--bg);
+  color: var(--muted);
+  border-top: 1px solid var(--rule);
+  margin-top: 4em;
+}
+.page__footer footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.4em 2em;
+  font-family: var(--mono);
+  font-size: 0.74em;
+  letter-spacing: 0.02em;
+}
+.page__footer a {
+  color: var(--muted);
   border-bottom: none;
 }
+.page__footer a:hover { color: var(--accent); }
+.page__footer-copyright,
+.page__footer-follow,
+.page__footer-follow a { font-family: var(--mono); font-size: 1em; }
+.site-footer {
+  padding: 0.4em 0 !important;
+  margin-top: 0;
+  line-height: 1.5;
+}
 
+/* ---------- ClustrMaps visitor tracker: right-aligned ---------- */
+.clustrmap-wrap {
+  margin-top: 2.2em;
+  text-align: right;
+  overflow: hidden;
+}
+.clustrmap-wrap img { max-height: 120px; }
+
+/* ============================================================
+   Blog post layout (preserved from earlier)
+   ============================================================ */
+
+/* Blog listing */
+.blog-listing__item {
+  margin-bottom: 1.6em;
+  padding-bottom: 1.6em;
+  border-bottom: 1px solid var(--rule);
+}
+.blog-listing__item:last-child { border-bottom: none; }
 .blog-listing__item .archive__item-title {
   margin-top: 0;
   margin-bottom: 0.25em;
+  font-family: var(--serif);
+  font-weight: 500;
 }
-
 .blog-listing__item .archive__item-excerpt {
   margin-top: 0.25em;
-  color: #494e52;
-  font-size: 0.9em;
+  color: var(--muted);
+  font-size: 0.95em;
+  font-family: var(--serif);
 }
 
-/* ===== Left Sidebar TOC Styles ===== */
-
-/* Override theme's .sidebar li font-size (0.75em) for TOC */
+/* Blog post: TOC sidebar (fixed-position, left of content) */
 .sidebar-toc li {
-  font-size: 18px !important;
-  line-height: 1.7 !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  font-family: var(--serif);
 }
-
-.sidebar-toc .toc-nav {
-  background: transparent;
-  padding: 0;
-}
-
+.sidebar-toc .toc-nav { background: transparent; padding: 0; }
 .sidebar-toc .nav__title {
-  margin: 0 0 0.75em 0;
+  margin: 0 0 0.7em 0;
   padding: 0;
-  font-size: 20px !important;
-  font-weight: 600;
-  color: #333;
+  font-family: var(--mono);
+  font-size: 0.78em !important;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
-
 .sidebar-toc .toc__menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.sidebar-toc .toc__menu li {
-  margin-bottom: 0.3em;
-}
-
+.sidebar-toc .toc__menu li { margin-bottom: 0.25em; }
 .sidebar-toc .toc__menu a {
-  color: #494e52;
+  color: var(--ink-soft);
   text-decoration: none;
   display: block;
-  padding: 0.2em 0.5em;
-  border-left: 3px solid transparent;
-  transition: all 0.2s ease;
+  padding: 0.18em 0.6em;
+  border-left: 2px solid transparent;
+  transition: all 0.15s ease;
+  font-family: var(--serif);
 }
-
 .sidebar-toc .toc__menu a:hover {
-  color: #000;
-  border-left-color: #ccc;
+  color: var(--ink);
+  border-left-color: var(--rule);
 }
-
 .sidebar-toc .toc__menu a.active {
-  color: #000;
+  color: var(--ink);
   font-weight: 600;
-  border-left-color: #52adc8;
+  border-left-color: var(--accent);
 }
-
 .sidebar-toc .toc__sub-menu {
   list-style: none;
-  margin: 0.15em 0 0 0;
+  margin: 0.1em 0 0 0;
   padding-left: 1em;
 }
-
 .sidebar-toc .toc__sub-menu li {
-  margin-bottom: 0.15em;
-  font-size: 16px !important;
+  margin-bottom: 0.1em;
+  font-size: 15px !important;
+}
+.sidebar-toc .toc__sub-menu a { color: var(--muted); }
+.sidebar-toc .toc__sub-menu a:hover { color: var(--ink); }
+.sidebar-toc .toc__sub-menu a.active { color: var(--ink); }
+
+#markdown-toc a.active-toc {
+  color: var(--ink);
+  font-weight: 600;
+  border-left-color: var(--accent);
 }
 
-.sidebar-toc .toc__sub-menu a {
-  color: #666;
-}
-
-.sidebar-toc .toc__sub-menu a:hover {
-  color: #000;
-}
-
-.sidebar-toc .toc__sub-menu a.active {
-  color: #000;
-}
-
-/* Blog post: TOC sits inside the same 1280px centered block as the masthead.
-   padding-left aligns blog content with the "Publications" nav link (~280px from container edge). */
+/* Blog post main content area (preserves earlier offset for TOC) */
 .blog-post-main {
   padding-left: 280px !important;
   box-sizing: border-box;
 }
 @media (max-width: 1200px) {
-  .blog-post-main {
-    padding-left: 1em !important;
-  }
+  .blog-post-main { padding-left: 1em !important; }
 }
-
-/* Remove Susy grid offset — let #main padding control positioning */
 .blog-post-main .page {
   float: none !important;
   width: 100% !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
-
-/* ===== Blog post figure styles ===== */
-.blog-post-main figure {
-  flex-direction: column;
-  align-items: center;
-}
-
-.blog-post-main figure figcaption {
-  width: 100%;
-  text-align: center;
-}
-
-/* ===== Blog post code block styles ===== */
+.blog-post-main figure { flex-direction: column; align-items: center; }
+.blog-post-main figure figcaption { width: 100%; text-align: center; }
 .blog-post-main div.highlighter-rouge,
 .blog-post-main figure.highlight {
   max-width: 100%;
   overflow-x: auto;
   box-sizing: border-box;
 }
-
 .blog-post-main div.highlighter-rouge .highlight,
 .blog-post-main figure.highlight .highlight {
   font-size: 0.9em !important;
+  font-family: var(--mono);
 }
 
-/* ===== Cross-reference styles ===== */
+/* Cross-references */
 .references-list {
   list-style: none;
   padding: 0;
   counter-reset: ref-counter;
 }
-
 .references-list li {
   counter-increment: ref-counter;
   margin-bottom: 0.6em;
   padding-left: 2.2em;
   position: relative;
+  font-family: var(--serif);
 }
-
 .references-list li::before {
   content: "[" counter(ref-counter) "]";
   position: absolute;
   left: 0;
   font-weight: 600;
-  color: #333;
+  font-family: var(--mono);
+  font-size: 0.9em;
+  color: var(--ink);
 }
-
 a.cite-ref {
   text-decoration: none;
-  color: #52adc8;
+  color: var(--accent);
   font-weight: 500;
+  border-bottom: none;
 }
-
-a.cite-ref:hover {
-  text-decoration: underline;
-}
-
+a.cite-ref:hover { color: var(--accent-hover); text-decoration: underline; }
 a.cite-backref {
   font-size: 0.8em;
   text-decoration: none;
-  color: #999;
+  color: var(--muted);
   margin-left: 0.3em;
+  border-bottom: none;
 }
+a.cite-backref:hover { color: var(--accent); }
 
-a.cite-backref:hover {
-  color: #52adc8;
-}
-
-/* ===== Active TOC link highlight ===== */
-#markdown-toc a.active-toc {
-  color: #000;
-  font-weight: 600;
-  border-left-color: #52adc8;
-}
-
-/* ===== Algorithm box styles (LaTeX-like) ===== */
-.algo-container {
-  display: flex;
-  gap: 2em;
-  margin: 2em 0;
-}
-
-.algo-container .algo-box {
-  flex: 1;
-  min-width: 0;
-}
-
+/* Algorithm boxes */
+.algo-container { display: flex; gap: 2em; margin: 2em 0; }
+.algo-container .algo-box { flex: 1; min-width: 0; }
 .algo-box {
   border: none;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
   padding: 0.8em 0;
   margin: 1.5em 0;
   background: transparent;
@@ -313,52 +471,68 @@ a.cite-backref:hover {
   font-size: 0.93em;
   line-height: 1.7;
 }
-
 .algo-box .algo-title {
   font-weight: 700;
   font-size: 1em;
   margin-bottom: 0.3em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--ink);
 }
-
-.algo-box .algo-io {
-  margin: 0.2em 0;
-  padding-left: 0.5em;
-}
-
+.algo-box .algo-io { margin: 0.2em 0; padding-left: 0.5em; }
 .algo-box .algo-io strong {
   font-weight: 700;
   font-variant: small-caps;
   font-size: 1.05em;
 }
-
 .algo-box ol {
   margin: 0.3em 0 0.5em 0;
   padding-left: 2.2em;
   list-style-type: decimal;
 }
-
 .algo-box ol li {
   margin-bottom: 0.1em;
   padding-left: 0.3em;
 }
-
 .algo-box .algo-cost {
   padding-left: 0.5em;
   margin-top: 0.4em;
   padding-top: 0.3em;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--ink);
 }
-
 .algo-box .algo-cost strong {
   font-weight: 700;
   font-variant: small-caps;
   font-size: 1.05em;
 }
-
 @media (max-width: 768px) {
-  .algo-container {
-    flex-direction: column;
-  }
+  .algo-container { flex-direction: column; }
+}
+
+/* ---------- Code blocks (light, mono) ---------- */
+code, pre, .highlight, .highlighter-rouge {
+  font-family: var(--mono);
+  font-size: 0.88em;
+}
+.page__content code {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.05em 0.35em;
+  color: var(--ink);
+}
+.page__content pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ---------- Tighten archive items spacing ---------- */
+.archive__item { margin-bottom: 1.2em; }
+
+/* ---------- Pagination & buttons ---------- */
+.pagination li a, .btn {
+  font-family: var(--mono);
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
 }

@@ -17,8 +17,6 @@ My research lies at the intersection of applied mathematics, optimization theory
 - Theoretical foundations of reinforcement learning, especially policy-based methods, and their role in aligning large language models (LLMs).
 - Efficient pre-training and fine-tuning methods for LLMs, bridging optimization principles with practical deployment.
 
-<hr style="border: none; border-top: 1px solid #ddd; margin: 2em 0;">
-
 ## News
 <div class="news-panel">
   <ul class="news-list">
@@ -112,8 +110,9 @@ My research lies at the intersection of applied mathematics, optimization theory
   </ul>
 </div>
 
-<div style="margin-top:30px; text-align:left; overflow:hidden;">
-  <script type="text/javascript" id="clustrmaps" 
-  src="//clustrmaps.com/map_v2.js?d=d2-9GfXbNZ_CT16pVbPIUgTFUp-1XfNBsc7byNJ2bas&cl=ffffff&w=200&h=120">
-</script>
+<div class="clustrmap-wrap">
+  <script type="text/javascript" id="clustrmaps"
+    src="//clustrmaps.com/map_v2.js?d=d2-9GfXbNZ_CT16pVbPIUgTFUp-1XfNBsc7byNJ2bas&cl=ffffff&w=200&h=120">
+  </script>
 </div>
+

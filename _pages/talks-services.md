@@ -1,8 +1,8 @@
 ---
 layout: archive
-title: ""
+title: "Activities"
 permalink: /talksandmore/
-author_profile: true
+author_profile: false
 ---
 
 ## Invited Talks and Organization

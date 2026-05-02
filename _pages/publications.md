@@ -2,7 +2,7 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
 For a complete and frequently updated bibliography, please see my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en). I keep this page as a compact research summary rather than a duplicate publication database.

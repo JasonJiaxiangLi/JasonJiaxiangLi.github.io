@@ -8,3 +8,13 @@ main:
 
   - title: "Blog"
     url: /blog/
+
+  # ---- Pre-staged nav entries for future PI role ----
+  # Uncomment the corresponding entry below AND set `published: true`
+  # in the matching _pages/*.md file to make it visible.
+  #
+  # - title: "Teaching"
+  #   url: /teaching/
+  #
+  # - title: "Group"
+  #   url: /group/
