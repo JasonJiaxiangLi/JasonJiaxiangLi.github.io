@@ -190,6 +190,59 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
 }
 .author__urls a:hover { color: var(--accent); }
 
+/* ---------- Mobile/tablet: stack sidebar above content ---------- */
+@media (max-width: 1199px) {
+  /* Sidebar takes full row width and pushes content below */
+  .sidebar.sticky {
+    position: static !important;
+    width: 100% !important;
+    float: none !important;
+    margin: 0 0 2em !important;
+    padding: 0 !important;
+  }
+  /* Avatar: small block on the left */
+  .author__avatar {
+    display: block !important;
+    width: 100px !important;
+    margin: 0 0 1em;
+  }
+  .author__avatar img {
+    width: 100% !important;
+    max-width: 100px;
+    border-radius: 2px;
+  }
+  /* Name + bio: own block under avatar */
+  .author__content {
+    display: block !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  /* URL list: stop being a floating dropdown — render inline */
+  .author__urls-wrapper {
+    display: block !important;
+    margin-top: 0.6em;
+  }
+  .author__urls-wrapper .btn { display: none !important; }
+  .author__urls {
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    z-index: auto;
+  }
+  /* Hide the theme's pointer triangle on mobile */
+  .author__urls:before,
+  .author__urls:after { display: none !important; }
+  /* Two-column flow for icon+label so it stays compact */
+  .author__urls li {
+    display: inline-block;
+    margin-right: 1.2em;
+  }
+}
+
 /* ---------- News panel ---------- */
 .news-panel {
   height: auto;
