@@ -63,11 +63,11 @@ h1.page__title, .archive .page__title, .archive > h1.page__title {
   border-bottom: none;
 }
 
-/* Links — single accent color, subtle underline */
+/* Links — single accent color, underline only on hover */
 .page__content a, .archive a, p a, li a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(26, 58, 92, 0.22);
+  border-bottom: 1px solid transparent;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 .page__content a:hover, .archive a:hover, p a:hover, li a:hover {
