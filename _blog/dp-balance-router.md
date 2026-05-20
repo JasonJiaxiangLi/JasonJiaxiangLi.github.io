@@ -385,11 +385,11 @@ Fast-$\Phi$ achieves the lowest imbalance (1,759 vs BR-0's 1,976 — 11% better)
 
 ## Does Better Prediction Help?
 
-An intuitive idea: use a small LLM to predict output length from the prompt, giving prompt-conditional survival $S(h|\text{prompt})$ instead of the marginal $S(h)$. We tested this:
+An intuitive idea: use a small LLM to predict output length from the prompt, giving prompt-conditional survival $S(h \mid \text{prompt})$ instead of the marginal $S(h)$. We tested this:
 
 **For the new request's survival function:** no improvement in our experiments. In principle, changing $S(h)$ can alter the worker ranking when different workers have different early-vs-late overflow profiles (e.g., worker A overflows at $h=10$ while worker B overflows at $h=500$). But in practice, workers' overflow profiles tend to be correlated across horizon steps, so the ranking was insensitive to prompt-conditional $S(h)$ in our traces.
 
-**For active requests' load projections:** the marginal survival conditioned on age ($P(\text{remaining} > h | \text{age})$) already captures most of the signal. With 50-200 requests per GPU, per-request prediction errors average out by the law of large numbers. A better per-request predictor has diminishing returns because the per-GPU load projection is already accurate.
+**For active requests' load projections:** the marginal survival conditioned on age ($P(\text{remaining} > h \mid \text{age})$) already captures most of the signal. With 50-200 requests per GPU, per-request prediction errors average out by the law of large numbers. A better per-request predictor has diminishing returns because the per-GPU load projection is already accurate.
 
 **Bottom line:** Fast-$\Phi$ is effectively **prediction-free**. You only need the empirical output length CDF, which can be bootstrapped from a few hundred requests.
 
