@@ -533,6 +533,29 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   overflow-x: auto;
   box-sizing: border-box;
 }
+
+/* Copy button on code blocks — override the decorative ::before code icon */
+div.highlighter-rouge,
+figure.highlight {
+  cursor: pointer;
+}
+div.highlighter-rouge::before,
+figure.highlight::before {
+  content: "\f0c5" !important;  /* fa-copy */
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  opacity: 0.4;
+}
+div.highlighter-rouge:hover::before,
+figure.highlight:hover::before {
+  opacity: 0.8;
+}
+div.highlighter-rouge.copied::before,
+figure.highlight.copied::before {
+  content: "\f00c" !important;  /* fa-check */
+  opacity: 1;
+  color: #2e7d32;
+}
 .blog-post-main div.highlighter-rouge .highlight,
 .blog-post-main figure.highlight .highlight {
   font-size: 0.9em !important;
