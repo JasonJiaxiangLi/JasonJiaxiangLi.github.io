@@ -10,15 +10,13 @@ hidden: false
 * TOC
 {:toc}
 
-# The EP Barrier Tax: How Request Routing Costs You 7-15% Throughput in MoE Serving
-
 **TL;DR:** When you serve a Mixture-of-Experts (MoE) LLM across multiple GPUs, every decode step waits for the slowest GPU due to expert parallelism synchronization. Bad request routing makes some GPUs much busier than others, wasting the rest. In this post, we study the DP load balancing problem starting from the BalanceRoute paper, derive an expected marginal overflow cost formulation, and test everything on real multi-node GPU clusters. Along the way we learn that the biggest win comes from simply switching to KV-load-aware routing — the specific algorithm matters less than the load metric.
 
 **Disclaimer:** This is a side project I put together with Claude after reading Bu et al. (2026). I'm new to this area and still learning — if you spot errors or have suggestions, please reach out at jasonljx96@gmail.com.
 
 ---
 
-## The Problem: GPUs Waiting in Line (But Only for MoE Models)
+## The Problem: GPUs Waiting in Line for MoE Models
 
 **Important distinction upfront:** The load-balancing problem in this post is specific to **Mixture-of-Experts (MoE) models** like DeepSeek-V3, Mixtral, and Qwen3-30B-A3B. For **dense models** served with ordinary external DP (separate vLLM instances behind a load balancer), each replica is fully independent — there is no synchronization barrier, and routing has minimal throughput impact. We explain the distinction below.
 
@@ -92,7 +90,7 @@ Classical load balancing (round-robin, join-shortest-queue) was designed for web
 
 3. **You don't know how long it will run.** The output length is unknown at routing time. "What is 2+2?" generates 5 tokens. "Write a detailed analysis of..." might generate 5,000. The router must decide without knowing which type it's dealing with.
 
-## The State of the Art: BalanceRoute
+## The SOTA: BalanceRoute
 
 Bu et al. (2026) proposed **BalanceRoute** (BR-0 and BR-H), currently the best published algorithm for this problem. Let's walk through how it works.
 
@@ -297,7 +295,7 @@ $K=5$ actually beats the exact computation slightly. This suggests $K=5$ acts as
 
 ## Results
 
-### Realistic simulation with MoE overhead model
+### Simulation with MoE overhead model
 
 Our simulation models the actual step-time structure of MoE inference: $t_{\text{step}} = \max_g(a \cdot L_g) + b \cdot \bar{L}$, where $b/a$ controls the fixed overhead fraction. With $b = 0$ (our original simulator), routing gains are overestimated. With $b = 0.5$ (realistic for MoE), the fixed EP/FFN/TP overhead dilutes the imbalance effect:
 

@@ -33,18 +33,18 @@ layout: default
 .algo-box .algo-cost strong { font-weight: 700; font-variant: small-caps; font-size: 1.05em; }
 @media (max-width: 768px) { .algo-container { flex-direction: column; } }
 
-/* Kramdown TOC: position as a sticky sidebar via CSS only */
-/* Align TOC left edge with the masthead title (centered 1280px + 1em padding) */
+/* Kramdown TOC: sticky left sidebar, stays visible while content scrolls */
 #markdown-toc {
-  position: fixed;
-  top: 130px;
-  left: max(20px, calc(50vw - 640px + 1em));
-  width: 180px;
-  max-height: calc(100vh - 120px);
+  position: sticky;
+  top: 80px;
+  float: left;
+  margin-left: -280px;
+  margin-bottom: 1em;
+  width: 240px;
+  max-height: calc(100vh - 110px);
   overflow-y: auto;
   list-style: none;
   padding: 0;
-  margin: 0;
   font-size: 14px;
   line-height: 1.6;
 }
