@@ -432,8 +432,17 @@ python run_benchmark.py \
 
 ---
 
-*This project started from studying "Tackling the Data-Parallel Load Balancing Bottleneck in LLM Serving" (Bu et al., 2026). Along the way we derived the overflow integral formulation, implemented the Fast-$\Phi$ approximation, and learned a lot about what actually matters in practice. We hope this writeup is useful to others exploring the same space.*
+*This project started from studying "Tackling the Data-Parallel Load Balancing Bottleneck in LLM Serving" (Bu et al., 2026). Along the way we derived the overflow integral formulation, implemented the Fast-$\Phi$ approximation, and learned a lot about what actually matters in practice. If you find this writeup is useful, please cite it as*
 
+```bibtex
+@misc{li2026dpbalance,
+  author = {Li, Jiaxiang},
+  title  = {The EP Barrier Tax: How Request Routing Costs You 7-15\% Throughput in MoE Serving},
+  year   = {2026},
+  url    = {https://jasonjiaxiangli.github.io/blog/dp-balance-router/},
+  note   = {Blog post}
+}
+```
 ---
 
 ## References
