@@ -22,6 +22,13 @@ My research develops optimization principles and algorithms for training modern 
 <div class="news-panel">
   <ul class="news-list">
     <li class="news-item">
+      <span class="news-date">June 2026</span>
+      <div class="news-copy">
+        Paper <span class="paper-title">Adaptive Rank Control for Robust Reinforcement Learning</span> is accepted by <strong>Transactions on Machine Learning Research</strong>. Congratulations to all my collaborators!
+      </div>
+    </li>
+
+    <li class="news-item">
       <span class="news-date">May 2026</span>
       <div class="news-copy">
         Two papers are accepted by <strong>ICML 2026</strong>. Congratulations to all my collaborators!
