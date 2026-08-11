@@ -118,9 +118,8 @@ My research develops optimization principles and algorithms for training modern 
   </ul>
 </div>
 
-<div class="clustrmap-wrap">
-  <script type="text/javascript" id="clustrmaps"
-    src="//clustrmaps.com/map_v2.js?d=d2-9GfXbNZ_CT16pVbPIUgTFUp-1XfNBsc7byNJ2bas&cl=ffffff&w=200&h=120">
+<div class="visitor-map-wrap">
+  <script type="text/javascript" id="mapmyvisitors"
+    src="https://mapmyvisitors.com/map.js?d=JGofUlMgBYoohJc50DZ2-QudgG5GmoxmlVMY8-ZfX2U&cl=ffffff&w=280">
   </script>
 </div>
-
