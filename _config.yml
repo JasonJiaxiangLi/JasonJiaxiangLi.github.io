@@ -58,12 +58,12 @@ author:
   name             : "Jiaxiang (Jason) Li"
   name_zh          : "李佳翔"
   avatar           : "jiaxiang_caliroadno1.jpg"
-  bio              : "Ph.D. in Applied Math"
-  location         : "Meta"
+  bio              :
+  location         : "Blacksburg, VA"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en"
-  email            : "jasonjx@meta.com"# "li003755@umn.edu" # "jxjli@ucdavis.edu"
+  email            : "jasonljx@vt.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

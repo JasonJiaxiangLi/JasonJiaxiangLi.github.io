@@ -9,18 +9,37 @@ redirect_from:
 
 For a complete and frequently updated bibliography, please see my [Google Scholar](https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en). I keep this page as a compact research summary rather than a duplicate publication database.
 
-*Last manually curated: May 2026.*
+*Last manually curated: August 2026.*
 
-## Research Threads
+My research studies the two-way interaction between optimization, operations research, and artificial intelligence. My established work develops optimization principles and algorithms for building modern AI systems. I am also developing a complementary research direction that uses AI to improve optimization algorithms and operational decision-making.
 
-- **Optimization for machine learning model training.** Algorithm design and convergence theory for training a broad range of ML models, from classical statistical learning to modern deep neural networks.
-- **Optimization for large language models.** Optimizer design, memory-efficient pretraining and fine-tuning, and optimization perspectives on alignment.
-- **Bilevel, minimax, and multi-objective learning.** Theory and algorithms for hierarchical learning problems, including constrained and multi-task settings.
-- **Riemannian and zeroth-order optimization.** Stochastic approximation, derivative estimation, ADMM-type methods, and optimization over manifolds.
-- **Distributed and decentralized optimization.** Problem-parameter-free and federated algorithms for large-scale nonconvex learning.
+## Optimization and Operations Research for AI
+
+I develop optimization theory and algorithms for training and aligning modern machine-learning systems, especially foundation models. My goal is to connect mathematical principles with the computational, memory, communication, and data constraints encountered in practice.
+
+Current themes include:
+
+- Optimization algorithms and training dynamics for foundation-model pre-training
+- Reinforcement learning and optimization for post-training/alignment
+- Memory- and parameter-efficient pretraining and fine-tuning
+- Bilevel, minimax, and multi-objective learning
+- Distributed, decentralized, and federated optimization
+- Riemannian and zeroth-order optimization
+
+## AI for Optimization and Operations Research
+
+I am developing methods that use AI—particularly foundation models and learning-augmented algorithms—to improve how optimization and operations research problems are formulated, solved, and deployed.
+
+I am especially interested in questions such as:
+
+- How can learned models identify useful structure in optimization problems?
+- How can AI guide algorithm selection, configuration, and search?
+- How can foundation models assist with optimization modeling and operational decision-making?
+- How can learned components be integrated with optimization algorithms while preserving reliability and performance guarantees?
 
 ## Recent Highlights
 
+- **Towards joint scaling laws with optimal batch size schedules.** *Preprint, 2026* \[[PDF](https://arxiv.org/pdf/2607.27731)\]
 - **A minimalist optimizer design for LLM pretraining.** *ICML 2026* \[[PDF](https://arxiv.org/pdf/2506.16659)\]
 - **A Tale of Two Problems: Multi-Task Bilevel Learning Meets Equality Constrained Multi-Objective Optimization.** *ICML 2026*
 - **Muon Outperforms Adam in Tail-End Associative Memory Learning.** *ICLR 2026* \[[PDF](https://arxiv.org/pdf/2509.26030v2)\]

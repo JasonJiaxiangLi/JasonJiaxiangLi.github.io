@@ -1,7 +1,7 @@
 /* ============================================================
    Minimalist redesign — Jiaxiang Li
    Body: Source Serif 4 (serif). Accents: JetBrains Mono.
-   Accent: deep ink-navy (#1a3a5c).
+   Accent: clear academic blue (#1f5f99).
    ============================================================ */
 
 :root {
@@ -11,8 +11,8 @@
   --rule: #e3e6ea;
   --bg: #fdfcf9;
   --bg-soft: #f6f4ef;
-  --accent: #1a3a5c;
-  --accent-hover: #2d5685;
+  --accent: #1f5f99;
+  --accent-hover: #174b7a;
   --serif: "Source Serif 4", "Source Serif Pro", "Newsreader", Georgia, "Times New Roman", serif;
   --mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
@@ -149,7 +149,7 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   font-size: 0.82em;
   font-weight: 400;
   letter-spacing: 0.03em;
-  text-transform: lowercase;
+  text-transform: none;
   color: var(--ink);
 }
 .greedy-nav .masthead__menu-item--lg a {
@@ -195,7 +195,8 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
 .page > .page__inner-wrap > header:empty { display: none !important; }
 .author__avatar img {
   border-radius: 2px;
-  max-width: 140px;
+  width: 160px;
+  max-width: 100%;
   border: none !important;
   padding: 0 !important;
   filter: grayscale(0.05);
@@ -338,7 +339,7 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--muted);
-  text-transform: lowercase;
+  text-transform: none;
   padding-top: 0.3em;
   line-height: 1.5;
 }

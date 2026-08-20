@@ -7,20 +7,22 @@ redirect_from:
   - /about.html
 ---
 
-Hi, welcome to my page! I am a Research Scientist at [Meta](https://ai.meta.com/research/). Prior to this, I was a postdoctoral associate at the [Department of Electrical and Computer Engineering](https://cse.umn.edu/ece), [University of Minnesota](https://twin-cities.umn.edu/), mentored by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html) and [Prof. Shuzhong Zhang](https://sites.google.com/umn.edu/shuzhong-zhang). I obtained my Ph.D. degree in Applied Mathematics at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://sqma.rice.edu/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/). My CV is [here](https://JasonJiaxiangLi.github.io/files/CV_Jiaxiang_Li_050126.pdf).
+Hi, welcome to my page! I am an Assistant Professor in the [Grado Department of Industrial and Systems Engineering](https://www.ise.vt.edu/) at [Virginia Tech](https://www.vt.edu/). Before joining Virginia Tech, I was an AI Research Scientist at [Meta](https://ai.meta.com/research/) and a postdoctoral associate at the [Department of Electrical and Computer Engineering](https://cse.umn.edu/ece), [University of Minnesota](https://twin-cities.umn.edu/), mentored by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html) and [Prof. Shuzhong Zhang](https://sites.google.com/umn.edu/shuzhong-zhang).
+
+I obtained my Ph.D. degree in Applied Mathematics at the [Department of Mathematics](https://math.ucdavis.edu/), [UC Davis](https://www.ucdavis.edu/), advised by [Prof. Krishna Balasubramanian](https://sites.google.com/view/kriznakumar/) and [Prof. Shiqian Ma](https://sqma.rice.edu/). Prior to this, I received my B.S. degree in Mathematics from [Zhejiang University](http://www.zju.edu.cn/english/). My CV is [here](https://JasonJiaxiangLi.github.io/files/CV_Jiaxiang_Li_081926.pdf).
 
 My research develops optimization principles and algorithms for training modern machine learning systems, with a particular focus on foundation models. I aim to understand and improve large-scale pretraining and alignment under practical constraints such as computation, memory, communication, and data quality. A central theme of my work is to bridge rigorous optimization theory with the algorithmic and systems challenges that arise in modern AI.
-
-<!-- Specifically, I work on:
-- Algorithm design for gradient-based, gradient-free (zeroth-order), and primal–dual methods for large-scale nonconvex optimization, including problems on Riemannian manifolds.
-- Convergence theory for deterministic and stochastic minimax and bilevel optimization, with applications to machine learning and operations research.
-- Distributed, decentralized and federated optimization algorithms for training large-scale AI systems.
-- Theoretical foundations of reinforcement learning, especially policy-based methods, and their role in aligning large language models (LLMs).
-- Efficient pre-training and fine-tuning methods for LLMs, bridging optimization principles with practical deployment. -->
 
 ## News
 <div class="news-panel">
   <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">August 2026</span>
+      <div class="news-copy">
+        Starting my new position as an <strong>Assistant Professor</strong> in the Grado Department of Industrial and Systems Engineering at <strong>Virginia Tech</strong>!
+      </div>
+    </li>
+
     <li class="news-item">
       <span class="news-date">June 2026</span>
       <div class="news-copy">

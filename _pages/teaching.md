@@ -3,28 +3,29 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: false
-published: false
+published: true
 ---
 
-<!--
-  This page is pre-staged for the future PI role.
-  Set `published: true` in the front matter (and uncomment the
-  matching nav entry in `_data/navigation.yml`) once you want it live.
--->
+Courses are listed in reverse chronological order.
 
-## Courses
+## Virginia Tech
 
-<!-- Example entry — duplicate per course:
+### ISE 5405 - Optimization I: Linear Programming
 
-### Course Number — Course Title
-*Term, Year · Institution*
+*Instructor · Current*
 
-One-paragraph course description.
+## University of Minnesota
 
-- [Syllabus (PDF)](#)
-- [Course website](#)
--->
+### EE 5239 - Introduction to Nonlinear Optimization
 
-## Reading Groups & Tutorials
+*Lecturer · Jointly taught with [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html)*
 
-<!-- Add seminars, reading groups, summer schools, etc. -->
+## University of California, Davis
+
+*Teaching Assistant*
+
+- **MAT 127** - Real Analysis
+- **MAT 168** - Optimization
+- **MAT 170** - Math in Data Science
+- **MAT 21A-D** - Calculus Series
+- **MAT 17A-C** - Calculus for Biology Series

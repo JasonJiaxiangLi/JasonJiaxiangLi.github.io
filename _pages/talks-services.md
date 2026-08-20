@@ -22,10 +22,10 @@ author_profile: false
 ## Awards
   + INFORMS Computing Society Prize, 2024
 
-## Industry Experiences
+<!-- ## Industry Experiences
 
 - **Applied Scientist Intern** at **Amazon.com**, Prime Science team.\
  June 2023 - September 2023, *Seattle, WA*
 
 - **Software Engineer Intern, Machine Learning** at **Meta Platforms**, Ads Core Machine Learning team.\
- June 2022 - September 2022, *Menlo Park, CA*
+ June 2022 - September 2022, *Menlo Park, CA* -->

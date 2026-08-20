@@ -3,18 +3,18 @@ main:
   - title: "Research"
     url: /research/
 
+  - title: "Teaching"
+    url: /teaching/
+
   - title: "Activities"
     url: /talksandmore/
 
   - title: "Blog"
     url: /blog/
 
-  # ---- Pre-staged nav entries for future PI role ----
-  # Uncomment the corresponding entry below AND set `published: true`
-  # in the matching _pages/*.md file to make it visible.
-  #
-  # - title: "Teaching"
-  #   url: /teaching/
+  # ---- Pre-staged Group page ----
+  # Uncomment this entry and set `published: true` in `_pages/group.md`
+  # when the page is ready to go live.
   #
   # - title: "Group"
   #   url: /group/
