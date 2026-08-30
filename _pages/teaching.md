@@ -12,7 +12,7 @@ Courses are listed in reverse chronological order.
 
 ### [ISE 5405 - Optimization I: Linear Programming](https://jasonjiaxiangli.github.io/ISE-5405/)
 
-Instructor · Current
+Instructor · Fall 2026
 
 ## University of Minnesota
 
@@ -20,9 +20,11 @@ Instructor · Current
 
 Lecturer · Jointly taught with [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html)
 
+The course material is under development [here](https://github.com/OptimAI-Lab/LLM-OPT)
+
 ## University of California, Davis
 
-*Teaching Assistant*
+Teaching Assistant
 
 - **MAT 127** - Real Analysis
 - **MAT 168** - Optimization
