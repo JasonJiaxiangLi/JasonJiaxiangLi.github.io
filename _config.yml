@@ -105,6 +105,7 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - AGENTS.md
   - CHANGELOG
   - CLAUDE.md
   - Capfile
