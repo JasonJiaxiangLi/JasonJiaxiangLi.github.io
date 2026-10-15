@@ -14,9 +14,12 @@ author_profile: false
   + Speaker at the Modeling and Optimization: Theory and Applications (MOPTA), August 2021
   + Speaker at the SIAM Conference on Optimization, July 2021
 
+## Area Chair
+  + ICLR 2027
+
 ## Paper Reviewer
   + Journal: INFORMS Journal on Computing, Information and Inference: A Journal of the IMA, JMLR, Computational Optimization and Applications, Journal of Scientific Computing, Journal of Global Optimization, Journal of Optimization Theory and Applications, IEEE TSP
-  + Conferences: AISTATS (2021, 2022, 2023), ICML (2022, 2024, 2025), NeurIPS (2023, 2024, 2025), ICLR (2023, 2024), AAAI (2024)
+  + Conferences: AISTATS (2021, 2022, 2023), ICML (2022, 2024, 2025), NeurIPS (2023, 2024, 2025, 2026), ICLR (2023, 2024), AAAI (2024)
   + Top reviewer for NeurIPS 2024
 
 ## Awards
