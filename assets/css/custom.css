@@ -255,7 +255,16 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
   margin: 0 !important;
   padding: 0 !important;
 }
-.author__urls a:hover { color: var(--accent); }
+.author__urls a:hover,
+.author__urls a:focus-visible {
+  color: var(--accent);
+  text-decoration: none;
+}
+.author__urls a:hover .author__url-label,
+.author__urls a:focus-visible .author__url-label {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
 
 /* ---------- Mobile/tablet: stack sidebar above content ---------- */
 @media (max-width: 1199px) {
