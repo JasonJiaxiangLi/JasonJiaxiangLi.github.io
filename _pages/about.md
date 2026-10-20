@@ -13,6 +13,8 @@ I obtained my Ph.D. degree in Applied Mathematics at the [Department of Mathemat
 
 My research develops optimization principles and algorithms for training modern machine learning systems, with a particular focus on foundation models. I aim to understand and improve large-scale pretraining and alignment under practical constraints such as computation, memory, communication, and data quality. A central theme of my work is to bridge rigorous optimization theory with the algorithmic and systems challenges that arise in modern AI.
 
+<strong class="recruiting-heading">Fully funded Ph.D. openings — Fall 2027.</strong> I am actively recruiting **1–2 Ph.D. students** to join my group in the Department of Industrial and Systems Engineering (ISE) at **Virginia Tech**. Research directions include efficient foundation-model training, alignment of agentic AI systems, and AI for optimization and applied mathematics. Applicants interested in related areas of theoretical or applied AI are also welcome. Our group actively collaborates with researchers at **Meta, Amazon, and Microsoft**, creating opportunities for joint research and large-scale AI experimentation. I am looking for curious, motivated students with strong mathematical foundations, programming experience, or both. If these directions excite you, please [email me](mailto:{{ site.author.email }}) your CV and a brief description of your research interests. Links to papers, code, or projects are also welcome.
+
 ## News
 <div class="news-panel">
   <ul class="news-list">

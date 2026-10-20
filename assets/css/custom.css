@@ -79,6 +79,11 @@ h1.page__title, .archive .page__title, .archive > h1.page__title {
 .page__content strong, .archive strong, strong { font-weight: 600; color: var(--ink); }
 .page__content em, .archive em, em { font-style: italic; }
 
+.page__content strong.recruiting-heading {
+  color: #b42318;
+  font-weight: 700;
+}
+
 hr { border: none; border-top: 1px solid var(--rule); margin: 2em 0; }
 
 /* Force-preserve Font Awesome glyph fonts (don't let any of my rules
