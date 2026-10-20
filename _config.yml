@@ -64,6 +64,7 @@ author:
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=h5OWvc0AAAAJ&hl=en"
   email            : "jasonljx@vt.edu"
+  cv               : "/files/CV_Jiaxiang_Li.pdf"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
