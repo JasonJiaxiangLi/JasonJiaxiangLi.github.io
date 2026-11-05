@@ -17,6 +17,13 @@ My research bridges optimization, operations research, and AI. I develop mathema
 <div class="news-panel">
   <ul class="news-list">
     <li class="news-item">
+      <span class="news-date">November 2026</span>
+      <div class="news-copy">
+        Check out <a href="https://erstinan.github.io/blog/macro/">Demystifying Manifold Constraints in LLM Pre-training</a>, an interactive walkthrough of our MACRO research with visual explanations of normalization, weight decay, and low-precision training. Thanks to my collaborator <strong>Kang An</strong> for putting it together!
+      </div>
+    </li>
+
+    <li class="news-item">
       <span class="news-date">October 2026</span>
       <div class="news-copy">
         Our paper <span class="paper-title">Why Muon Outperforms Adam: A Curvature Perspective</span> has been accepted to <strong>NeurIPS 2026</strong>. Congratulations to all my collaborators! I will travel to <strong>Atlanta</strong> in <strong>December</strong> for the conference. If you'll be there too, feel free to reach out&mdash;I'd love to catch up!
