@@ -1,0 +1,146 @@
+{
+  "provenance": {
+    "paper": "https://arxiv.org/pdf/2607.27731",
+    "version": "arXiv:2607.27731v1, 30 July 2026",
+    "notes": [
+      "Training trajectories are sparse manual visual approximations of Figure 1, not original experiment logs. Points are rounded and lines between them are illustrative interpolations.",
+      "iterationReduction reproduces the Figure 1 annotations at matched test loss. It is an optimizer-iteration reduction, not a measured compute or wall-clock reduction.",
+      "Benchmark scores reproduce the printed values in Table 1. Matched-ratio losses and reportedDelta reproduce Table 4; deltas can differ slightly from subtraction of the rounded printed losses.",
+      "reportedEfficiency contains the compute-efficiency multipliers reported in Section 4.1 and Figure 5. These are not measured wall-clock speedups."
+    ]
+  },
+  "training": {
+    "dense": {
+      "label": "Llama3-7B",
+      "iterationReduction": 62.5,
+      "quality": "Visual approximation from Figure 1; not original logs",
+      "axes": {
+        "steps": {
+          "xLabel": "Optimizer steps",
+          "yDomain": [2.7, 4.0],
+          "series": [
+            {
+              "id": "static",
+              "label": "Static batch (baseline)",
+              "points": [[700, 4.00], [1000, 3.80], [1500, 3.59], [2000, 3.48], [3000, 3.30], [4000, 3.20], [5000, 3.12], [6000, 3.07], [7000, 3.03], [8000, 3.00], [8700, 2.99], [9300, 2.86], [9700, 2.81]]
+            },
+            {
+              "id": "dynamic",
+              "label": "Dynamic batch (same average)",
+              "points": [[1200, 4.00], [1500, 3.89], [2000, 3.75], [3000, 3.52], [4000, 3.36], [5000, 3.24], [6000, 3.16], [7000, 3.08], [8000, 3.00], [8700, 2.89], [9200, 2.80], [9600, 2.75]]
+            },
+            {
+              "id": "large",
+              "label": "Dynamic batch (larger average)",
+              "points": [[600, 4.00], [800, 3.80], [1000, 3.64], [1500, 3.43], [2000, 3.29], [2400, 3.17], [2800, 3.07], [3100, 3.00], [3300, 2.92], [3500, 2.82], [3650, 2.81]]
+            }
+          ]
+        },
+        "tokens": {
+          "xLabel": "Training tokens (billions)",
+          "yDomain": [2.7, 3.55],
+          "series": [
+            {
+              "id": "static",
+              "label": "Static batch (baseline)",
+              "points": [[0.55, 3.50], [0.60, 3.46], [0.75, 3.34], [1.00, 3.21], [1.25, 3.14], [1.50, 3.09], [1.75, 3.05], [2.00, 3.02], [2.25, 3.00], [2.30, 2.99], [2.40, 2.89], [2.53, 2.81]]
+            },
+            {
+              "id": "dynamic",
+              "label": "Dynamic batch (same average)",
+              "points": [[0.50, 3.49], [0.60, 3.40], [0.75, 3.29], [1.00, 3.18], [1.25, 3.10], [1.50, 3.03], [1.75, 2.98], [2.00, 2.92], [2.25, 2.84], [2.40, 2.78], [2.53, 2.75]]
+            },
+            {
+              "id": "large",
+              "label": "Dynamic batch (larger average)",
+              "points": [[0.58, 3.49], [0.75, 3.38], [1.00, 3.23], [1.25, 3.15], [1.50, 3.07], [1.75, 3.00], [2.00, 2.95], [2.15, 2.90], [2.25, 2.87], [2.40, 2.82], [2.53, 2.81]]
+            }
+          ]
+        }
+      }
+    },
+    "moe": {
+      "label": "Qwen3-A1B (MoE)",
+      "iterationReduction": 37.5,
+      "quality": "Visual approximation from Figure 1; not original logs",
+      "axes": {
+        "steps": {
+          "xLabel": "Optimizer steps",
+          "yDomain": [2.5, 3.2],
+          "series": [
+            {
+              "id": "static",
+              "label": "Static batch (baseline)",
+              "points": [[900, 3.20], [1200, 3.07], [1600, 2.98], [2000, 2.91], [2500, 2.84], [3000, 2.79], [4000, 2.74], [5000, 2.71], [6000, 2.69], [6500, 2.67], [6800, 2.61], [7000, 2.57]]
+            },
+            {
+              "id": "dynamic",
+              "label": "Dynamic batch (same average)",
+              "points": [[1130, 3.20], [1400, 3.11], [1800, 3.02], [2400, 2.94], [3000, 2.87], [4000, 2.80], [5000, 2.75], [6000, 2.69], [6300, 2.65], [6600, 2.60], [7000, 2.54]]
+            },
+            {
+              "id": "large",
+              "label": "Dynamic batch (larger average)",
+              "points": [[950, 3.20], [1200, 3.11], [1500, 3.03], [2000, 2.93], [2500, 2.84], [3000, 2.78], [3500, 2.74], [3950, 2.69], [4150, 2.63], [4400, 2.57]]
+            }
+          ]
+        },
+        "tokens": {
+          "xLabel": "Training tokens (billions)",
+          "yDomain": [2.5, 3.0],
+          "series": [
+            {
+              "id": "static",
+              "label": "Static batch (baseline)",
+              "points": [[4.0, 2.92], [5.0, 2.86], [6.0, 2.80], [7.0, 2.77], [8.0, 2.75], [9.0, 2.73], [10.0, 2.72], [11.0, 2.71], [12.0, 2.69], [13.0, 2.68], [13.4, 2.65], [14.0, 2.59], [14.8, 2.57]]
+            },
+            {
+              "id": "dynamic",
+              "label": "Dynamic batch (same average)",
+              "points": [[4.0, 2.86], [5.0, 2.81], [6.0, 2.78], [7.0, 2.75], [8.0, 2.72], [9.0, 2.70], [10.0, 2.67], [11.0, 2.66], [12.0, 2.63], [13.0, 2.59], [14.0, 2.56], [14.8, 2.54]]
+            },
+            {
+              "id": "large",
+              "label": "Dynamic batch (larger average)",
+              "points": [[4.0, 2.93], [5.0, 2.86], [6.0, 2.82], [7.0, 2.78], [8.0, 2.75], [9.0, 2.72], [10.0, 2.71], [11.0, 2.68], [12.0, 2.64], [13.0, 2.61], [14.0, 2.58], [14.8, 2.57]]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "benchmarks": {
+    "tasks": ["LAMBADA", "HellaSwag", "ARC-Easy", "ARC-Challenge", "WinoGrande", "PIQA", "OpenBookQA", "BoolQ"],
+    "models": [
+      {
+        "id": "dense",
+        "label": "Llama3 (dense)",
+        "static": [32.23, 42.93, 56.22, 29.26, 53.03, 67.89, 32.40, 61.89],
+        "dynamic": [35.36, 44.33, 56.36, 30.46, 53.99, 68.34, 33.20, 62.26]
+      },
+      {
+        "id": "moe",
+        "label": "Qwen3 (MoE)",
+        "static": [36.06, 45.61, 57.83, 32.59, 52.49, 68.77, 34.00, 61.47],
+        "dynamic": [37.71, 46.80, 59.09, 32.25, 55.33, 69.97, 36.20, 61.59]
+      }
+    ]
+  },
+  "ratio": {
+    "rows": [
+      {"lr": 0.003, "schedule": "wsd", "lrLoss": 3.015, "batchLoss": 3.033, "reportedDelta": 0.019},
+      {"lr": 0.003, "schedule": "cosine", "lrLoss": 3.050, "batchLoss": 3.082, "reportedDelta": 0.031},
+      {"lr": 0.003, "schedule": "linear", "lrLoss": 3.041, "batchLoss": 3.059, "reportedDelta": 0.017},
+      {"lr": 0.001, "schedule": "wsd", "lrLoss": 2.995, "batchLoss": 3.035, "reportedDelta": 0.039},
+      {"lr": 0.001, "schedule": "cosine", "lrLoss": 3.042, "batchLoss": 3.093, "reportedDelta": 0.051},
+      {"lr": 0.001, "schedule": "linear", "lrLoss": 3.035, "batchLoss": 3.063, "reportedDelta": 0.028},
+      {"lr": 0.0003, "schedule": "wsd", "lrLoss": 3.077, "batchLoss": 3.212, "reportedDelta": 0.136},
+      {"lr": 0.0003, "schedule": "cosine", "lrLoss": 3.221, "batchLoss": 3.964, "reportedDelta": 0.743},
+      {"lr": 0.0003, "schedule": "linear", "lrLoss": 3.239, "batchLoss": 3.655, "reportedDelta": 0.416}
+    ]
+  },
+  "reportedEfficiency": [
+    {"id": "dense", "label": "Llama3", "factor": 1.15},
+    {"id": "moe", "label": "Qwen3 MoE", "factor": 1.06}
+  ]
+}
